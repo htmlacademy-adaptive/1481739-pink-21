@@ -13,20 +13,20 @@
         <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+        <button class="main-nav__toggle" type="button" aria-label="Переключение меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__link" href="#">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__link" href="#">
               Фотографии
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__link" href="#">
               Конкурс
             </a>
           </li>
@@ -79,7 +79,7 @@
             </a>
           </li>
           <li class="downloads__item">
-            <a class="" href="#" aria-label="Логотип Microsoft">
+            <a class="downloads__link" href="#" aria-label="Логотип Microsoft">
               <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.908 19.5238H0V0H20.908V19.5238Z" fill="#F05423" />
                 <path d="M44 19.5238H23.092V0H44V19.5238Z" fill="#84C441" />
@@ -95,123 +95,123 @@
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества приложения</h2>
-        <p class="advantages__intro">
+        <p class="advantages__text">
           Устали от серости мегаполиса?
         </p>
-        <p class="advantages__intro">Нам есть, что вам<br>
+        <p class="advantages__text">Нам есть, что вам<br>
           предложить!</p>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--mood">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы —
-              счастливый обладатель стильной стрижки-минутки.</p>
+          <li class="advantages__item advantages-item advantages-item--mood">
+            <h3 class="advantages-item__title">Поднимает настроение</h3>
+            <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantages__item advantages__item--change">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+          <li class="advantages__item advantages-item advantages-item--change">
+            <h3 class="advantages-item__title">Меняет мир вокруг</h3>
+            <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               усилить эффект</p>
           </li>
-          <li class="advantages__item advantages__item--friends">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+          <li class="advantages__item advantages-item advantages-item--friends">
+            <h3 class="advantages-item__title">Заводит новых друзей</h3>
+            <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
           </li>
         </ul>
-        <article class="research research__field">
+        </div>
+      </section>
+        <section class="research">
           <div class="research__wrapper">
             <h2 class="visually-hidden">Исследование ученых</h2>
             <p class="research__slogan">
               "Эффект на 24 часа!"
             </p>
-            <p class="research-description">
+            <p class="research__description">
               Британские ученые провели исследование и доказали, что положительный эффект от использования приложения
               длится целые сутки!
             </p>
-            <a class="research__link">Узнать больше об исследовании</a>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
           </div>
-        </article>
+        </section>
         <section class="reviews">
           <div class="reviews__wrapper slider">
             <h2 class="reviews__title">Отзывы о нас</h2>
             <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
-                <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__author-info reviews__author-info__no-info">25 лет, водитель трамвая</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              <blockquote class="reviews__item reviews-item slider__item">
+                <cite class="reviews-item__author-name">Николай Петров</cite>
+                <p class="reviews-item__author-info">25 лет, водитель трамвая</p>
+                <p class="reviews-item__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                   привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                  фотографии!»</p>
+                  фотографии!»
+                </p>
               </blockquote>
               <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
               <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
-              <div class="reviews__toggles slider__toggles">
-                <button class="slider__toggle slider__toggle--current" type="button"></button>
-                <button class="slider__toggle" type="button"></button>
-                <button class="slider__toggle" type="button"></button>
+              <div class="reviews__switch slider__switch slider-switch">
+                <button class="slider-switch__toggle slider-switch__toggle--current" type="button" aria-label="Посмотреть первый отзыв"></button>
+                <button class="slider-switch__toggle" type="button" aria-label="Посмотреть второй отзыв"></button>
+                <button class="slider-switch__toggle" type="button" aria-label="Посмотреть третий отзыв"></button>
               </div>
             </div>
           </div>
         </section>
         <section class="tariffs">
-          <h2 class="reviews__title">Тарифы</h2>
+          <h2 class="tariffs__title">Тарифы</h2>
           <div class="tariffs__wrapper">
-            <table class="tariffs__list">
-              <tr class="tariffs__item">
-                <td class="tariffs__item__no-element">
+            <table class="tariffs__table">
+              <tr class="tariffs__row">
+                <td class="tariffs__data  tariffs-data__no-element">
                 </td>
-                <td class="tariffs__item__element">
-                  <b class="tariffs__name">База</b>
-                  <p class="tariffs__price">1,99 USD</p>
+                <td class="tariffs__data tariffs-data">
+                  <h3 class="tariffs-data__name">База</h3>
+                  <p class="tariffs-data__price">1,99 USD</p>
                 </td>
-                <td class="tariffs__item__element">
-                  <b class="tariffs__name">Стандарт</b>
-                  <p class="tariffs__price">3,99 USD</p>
+                <td class="tariffs__data tariffs-data">
+                  <h3 class="tariffs-data__name">Стандарт</h3>
+                  <p class="tariffs-data__price">3,99 USD</p>
                 </td>
-                <td class="tariffs__item__element">
-                  <b class="tariffs__name">Анлим</b>
-                  <p class="tariffs__price">9,99 USD</p>
+                <td class="tariffs__data tariffs-data">
+                  <h3 class="tariffs-data__name">Анлим</h3>
+                  <p class="tariffs-data__price">9,99 USD</p>
                 </td>
               </tr>
-              <tr class="tariffs__item">
-                <td class="tariffs__item__element">Розовый фильтр</td>
-                <td class="tariffs__item__element"></td>
-                <td class="tariffs__item__element"></td>
-                <td class="tariffs__item__element"></td>
+              <tr class="tariffs__row">
+                <td class="tariffs__data tariffs-data">Розовый фильтр</td>
+                <td class="tariffs__data"></td>
+                <td class="tariffs__data"></td>
+                <td class="tariffs__data"></td>
               </tr>
-              <tr class="tariffs__item">
-                <td class="tariffs__item__element">Смайлики</td>
-                <td class="tariffs__item__element"></td>
-                <td class="tariffs__item__element"></td>
-                <td class="tariffs__item__element"></td>
+              <tr class="tariffs__row">
+                <td class="tariffs__data tariffs-data">Смайлики</td>
+                <td class="tariffs__data"></td>
+                <td class="tariffs__data"></td>
+                <td class="tariffs__data"></td>
               </tr>
-              <tr class="tariffs__item">
-                <td class="tariffs__item__element">Комментарии</td>
-                <td class="tariffs__item__element"></td>
-                <td class="tariffs__item__element"></td>
-                <td class="tariffs__item__element"></td>
-                <td class="tariffs__item__element"></td>
+              <tr class="tariffs__row">
+                <td class="tariffs__data tariffs-data">Комментарии</td>
+                <td class="tariffs__data"></td>
+                <td class="tariffs__data"></td>
+                <td class="tariffs__data"></td>
               </tr>
             </table>
-            <div class="tariffs_toggles slider__toggles">
-              <button class="slider__toggle" type="button"></button>
-              <button class="slider__toggle slider__toggle--current" type="button"></button>
-              <button class="slider__toggle" type="button"></button>
+            <div class="tariffs__switch slider-switch">
+              <button class="slider-switch__toggle" type="button" aria-label="Посмотреть базовый пакет приложения"></button>
+              <button class="slider-switch__toggle slider-switch__toggle--current" type="button" aria-label="Посмотреть стандартный пакет приложения"></button>
+              <button class="slider-switch__toggle" type="button" aria-label="Посмотреть безлимитный пакет приложения"></button>
             </div>
           </div>
         </section>
         <section class="contacts">
           <div class="contacts-wrapper">
             <h2 class="visually-hidden">Контакты</h2>
-            <p class="contacts__offer">Остались вопросы?<br>
+            <p class="contacts__call">Остались вопросы?<br>
               Свяжитесь с нами!</p>
-            <p class="tel">Звоните:<a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-            <p class="mail">Пишите:<a class="contacts__mail" href="#">mail@htmlacademy.ru</a></p>
+            <p class="contacts__tel contacts-tel">Звоните:<a class="contacts-tel__link" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+            <p class="contacts__mail contacts-mail">Пишите:<a class="contacts-mail__link" href="#">mail@htmlacademy.ru</a></p>
             <p class="address">Приезжайте в гости:<a class="contacts__address" href="#">ул. Большая
                 Конюшенная, 19/8</a></p>
             <img src="#" width="320" height="200" alt="Карта с нашим местоположением">
           </div>
         </section>
-      </div>
-    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -239,7 +239,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Ссылка на HTML Academy"></a>
       </div>
-    </div>
     </div>
   </footer>
 </body>
