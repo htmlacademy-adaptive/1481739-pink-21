@@ -10,28 +10,28 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <img src="#" width="74" height="23" alt="Логотип приложения Пинк">
+        <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="">
+            <a href="#">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="">
+            <a href="#">
               Фотографии
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="">
+            <a href="#">
               Конкурс
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -61,7 +61,7 @@
             </a>
           </li>
           <li class="downloads__item">
-            <a class="" href="#" aria-label="Логотип Android">
+            <a class="downloads__link" href="#" aria-label="Логотип Android">
               <svg width="43" height="47" viewBox="0 0 43 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M34.8864 14.0617H8.11359C8.11359 14.1718 8.11359 14.282 8.11359 14.3922V33.1955C8.10298 34.1078 8.44648 34.99 9.0745 35.6633C9.70251 36.3367 10.5681 36.7508 11.496 36.8219V44.2751C11.5402 45.0122 11.8701 45.7048 12.4181 46.2114C12.9661 46.7179 13.6909 47 14.444 47C15.1972 47 15.9219 46.7179 16.4699 46.2114C17.0179 45.7048 17.3478 45.0122 17.3921 44.2751V36.842H25.6283V44.2751C25.6726 45.0122 26.0025 45.7048 26.5505 46.2114C27.0985 46.7179 27.8232 47 28.5764 47C29.3296 47 30.0543 46.7179 30.6023 46.2114C31.1503 45.7048 31.4802 45.0122 31.5245 44.2751V36.8219C32.4532 36.7509 33.32 36.3371 33.9496 35.664C34.5793 34.991 34.925 34.1088 34.917 33.1955V14.4023C34.9068 14.2921 34.8966 14.1819 34.8864 14.0617Z"
@@ -95,6 +95,11 @@
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Преимущества приложения</h2>
+        <p class="advantages__intro">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="advantages__intro">Нам есть, что вам<br>
+          предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -112,7 +117,7 @@
               новых</p>
           </li>
         </ul>
-        <article class="research research--field">
+        <article class="research research__field">
           <div class="research__wrapper">
             <h2 class="visually-hidden">Исследование ученых</h2>
             <p class="research__slogan">
@@ -131,7 +136,7 @@
             <div class="reviews__list slider__list">
               <blockquote class="reviews__item slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__author-info reviews__author-info--no-info">25 лет, водитель трамвая</p>
+                <p class="reviews__author-info reviews__author-info__no-info">25 лет, водитель трамвая</p>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                   привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
                   фотографии!»</p>
@@ -192,7 +197,6 @@
               <button class="slider__toggle" type="button"></button>
             </div>
           </div>
-
         </section>
         <section class="contacts">
           <div class="contacts-wrapper">
@@ -200,10 +204,10 @@
             <p class="contacts__offer">Остались вопросы?<br>
               Свяжитесь с нами!</p>
             <p class="tel">Звоните:<a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-            <p class="tel">Пишите:<a class="contacts__mail" href="#">mail@htmlacademy.ru</a></p>
-            <p class="tel">Приезжайте в гости:<a class="contacts__address" href="#">ул. Большая
+            <p class="mail">Пишите:<a class="contacts__mail" href="#">mail@htmlacademy.ru</a></p>
+            <p class="address">Приезжайте в гости:<a class="contacts__address" href="#">ул. Большая
                 Конюшенная, 19/8</a></p>
-                <img src="#" width="320" height="200" alt="Карта с нашим местоположением">
+            <img src="#" width="320" height="200" alt="Карта с нашим местоположением">
           </div>
         </section>
       </div>
@@ -217,16 +221,16 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy"
-              aria-label="Мы в Инстаграме"></a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
+              aria-label="Ссылка на Инстаграм Академии"></a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-              aria-label="Мы в Фейсбуке"></a>
+              aria-label="Ссылка на Фэйсбук Академии"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"
-              aria-label="Мы в Ютубе"></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"
+              aria-label="Ссылка на Ютуб Академии"></a>
           </li>
         </ul>
       </div>
@@ -238,11 +242,6 @@
     </div>
     </div>
   </footer>
-
-
-
-
-
 </body>
 
 </html>
