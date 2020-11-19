@@ -1,0 +1,19 @@
+.page-footer{
+  width: $mobile-size-width;
+  margin: 0 auto;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+
+

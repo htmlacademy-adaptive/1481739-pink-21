@@ -1,1 +1,17 @@
 // Начните писать стили здесь
+// body { background: blue; }
+@import "variables";
+@import "page";
+@import "page-header";
+@import "visually-hidden";
+@import "main-nav";
+@import "body";
+@import "downloads";
+@import "advantages";
+@import "research";
+@import "reviews";
+@import "tariffs";
+@import "contacts";
+@import "page-footer";
+@import "social";
+
