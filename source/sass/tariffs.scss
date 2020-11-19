@@ -1,40 +1,17 @@
 .tariffs {
   width: $mobile-size-width;
   margin: 0 auto;
-
-  &__table {
-    border: 2px solid #E5E5E5;
-  }
-
-  &__data {
-    border: 2px solid #E5E5E5;
-  }
-
-  &__switch {
-    display: flex;
-    justify-content: center;
-  }
 }
 
-.tariffs-data {
-  &__name {
-    font-size: 16px;
-    line-height: 30px;
-  }
+.tariffs__table {
+  border: 2px solid rgb(229, 229, 229);
+}
 
-  &__price {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-  }
+.tariffs__data {
+  border: 2px solid rgb(229, 229, 229);
+}
 
-  &__function {
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  &--ground {
-    background-color: $basic-color;
-    color: $basic-white;
-  }
+.tariffs__switch {
+  display: flex;
+  justify-content: center;
 }

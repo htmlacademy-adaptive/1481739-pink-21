@@ -1,0 +1,20 @@
+.reviews-item {
+  margin: 0;
+}
+
+.reviews-item__author-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews-item__text {
+  font-size: 14px;
+  line-height: 30px;
+  margin: 31px 0 45px;
+}
+
+.reviews-item__author-info {
+  display: none;
+}
