@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"); }
+
+.page__body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #283645;
+  width: 320px; }
+
+.page-header {
+  background-color: rgba(0, 0, 0, 0.3); }
+  .page-header--picture {
+    position: relative;
+    min-height: 462px; }
+  .page-header--picture::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 462px;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    z-index: -1; }
+  .page-header--inner-bg {
+    position: relative;
+    min-height: 236px; }
+  .page-header--inner-bg::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 236px;
+    background-image: url("../img/inner-bg.jpg");
+    background-repeat: no-repeat;
+    z-index: -1; }
+
+.page-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  padding: 19px 0 18px 0; }
+
+.page-header__slogan {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 24px; }
+
+.page-header__wrapper-slogan {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 29px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto; }
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  width: 50px;
+  height: 24px;
+  background-image: url("../img/open-menu.png"); }
+
+.main-nav__list {
+  display: none;
+  list-style: none;
+  text-align: center;
+  padding: 0; }
+
+.main-nav__link {
+  text-decoration: none;
+  color: white; }
+
+.downloads {
+  background-color: #283645; }
+
+.downloads__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 28px 29px 38px 0; }
+
+.downloads__slogan {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 24px; }
+
+.downloads__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 29px;
+  box-sizing: border-box;
+  padding: 15px 35px; }
+
+.downloads__list {
+  padding: 0;
+  margin: 32px 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
+
+.downloads__text {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0; }
+
+.advantages {
+  position: relative;
+  padding-top: 46px; }
+  .advantages::after {
+    position: absolute;
+    content: "";
+    width: 157px;
+    height: 320px;
+    bottom: 0;
+    left: 25%;
+    background-image: url("../img/smile-phone.jpg"); }
+
+.advantages__wrapper {
+  margin: 0 auto; }
+
+.advantages__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 35px; }
+
+.advantages__list {
+  position: relative;
+  padding: 50px 0 48px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #f2f2f2;
+  min-height: 750px; }
+  .advantages__list::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 0;
+    border-style: solid;
+    border-width: 0 0 35px 320px;
+    border-color: transparent transparent #f2f2f2 transparent; }
+
+.advantages-item {
+  width: 280px;
+  margin: 0 auto; }
+
+.advantages-item__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 24px; }
+
+.advantages-item__description {
+  margin: 0;
+  padding-bottom: 43px;
+  font-size: 14px;
+  line-height: 24px; }
+
+.research {
+  display: none; }
+
+.reviews__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0; }
+
+.reviews-item {
+  margin: 0; }
+
+.reviews-item__author-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px; }
+
+.reviews-item__text {
+  font-size: 14px;
+  line-height: 30px;
+  margin: 31px 0 45px; }
+
+.reviews-item__author-info {
+  display: none; }
+
+.tariffs {
+  width: 280px;
+  margin: 0 auto; }
+
+.tariffs__table {
+  border: 2px solid #e5e5e5; }
+
+.tariffs__data {
+  border: 2px solid #e5e5e5; }
+
+.tariffs__switch {
+  display: flex;
+  justify-content: center; }
+
+.tariffs-data__name {
+  font-size: 16px;
+  line-height: 30px; }
+
+.tariffs-data__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px; }
+
+.tariffs-data__function {
+  font-size: 14px;
+  line-height: 30px; }
+
+.tariffs-data--ground {
+  background-color: #283645;
+  color: white; }
+
+.contacts {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center; }
+
+.contacts__wrapper {
+  padding: 47px 0 40px 0; }
+
+.contacts__call {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 45px; }
+
+.contacts-feedback {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  padding-bottom: 35px; }
+
+.contacts-feedback__link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856; }
+
+.page-footer {
+  width: 280px;
+  margin: 0 auto; }
+
+.page-footer__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0; }
+
+.social__item {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%; }
+
+.social__link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.slider-switch__toggle {
+  background-color: transparent;
+  border: none;
+  width: 6px;
+  height: 6px;
+  background-color: #283645;
+  border-radius: 50%;
+  opacity: 0.3; }
+
+.entry {
+  margin: 0 auto; }
+
+.entry__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center; }
+
+.form__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  padding: 12px 44px; }
+
+.form__wrapper-button {
+  width: 280px;
+  margin: 0 auto; }
+
+.form__legend {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase; }
+  .form__legend--star {
+    color: #d22856; }
+
+.form-fieldset {
+  border: none;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0; }
+
+.form-fieldset__wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.form-fieldset__label {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856; }
+
+.form-fieldset__input {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  border: 2px solid #e5e5e5; }
+
+.form-selection {
+  border: none;
+  padding: 0;
+  background-color: #f2f2f2; }
+
+.form-selection__wrapper {
+  width: 280px;
+  margin: 0 auto; }
+
+.form-selection__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856; }
+
+.form-selection__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.form-selection__label {
+  font-size: 18px;
+  line-height: 30px; }
+
+.form-description {
+  width: 280px;
+  margin: 0 auto;
+  border: none; }
+
+.form-description__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856; }
+
+.form-description__text {
+  font-size: 18px;
+  line-height: 30px;
+  width: 276px;
+  text-align: center;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px; }
+
+.modal {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
