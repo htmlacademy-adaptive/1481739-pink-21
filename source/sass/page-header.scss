@@ -1,14 +1,32 @@
 .page-header {
-  position: relative;
   background-color: rgba(0, 0, 0, 0.3);
-  min-height: 462px;
 
-  &::before {
+  &--picture {
+    position: relative;
+    min-height: 462px;
+  }
+
+  &--picture::before {
     content: "";
     position: absolute;
     width: 320px;
     height: 462px;
     background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &--inner-bg {
+    position: relative;
+    min-height: 236px;
+  }
+
+  &--inner-bg::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 236px;
+    background-image: url("../img/inner-bg.jpg");
     background-repeat: no-repeat;
     z-index: -1;
   }

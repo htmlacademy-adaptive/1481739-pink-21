@@ -14,7 +14,9 @@
   line-height: 30px;
 }
 
-.tariffs-data--ground {
-  background-color: $basic-color;
-  color: $basic-white;
+.tariffs-data {
+  &--ground {
+    background-color: $basic-color;
+    color: $basic-white;
+  }
 }
