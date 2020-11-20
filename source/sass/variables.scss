@@ -1,0 +1,10 @@
+$basic-white: rgba(255, 255, 255, 1);
+$basic-color: rgb(40, 54, 69);
+$mobile-size-width: 280px;
+$font-family: "Open Sans", "Arial", sans-serif;
+$link-color: rgb(210, 40, 86);
+
+@mixin button() {
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,17 @@
+.tariffs {
+  width: $mobile-size-width;
+  margin: 0 auto;
+}
+
+.tariffs__table {
+  border: 2px solid rgb(229, 229, 229);
+}
+
+.tariffs__data {
+  border: 2px solid rgb(229, 229, 229);
+}
+
+.tariffs__switch {
+  display: flex;
+  justify-content: center;
+}

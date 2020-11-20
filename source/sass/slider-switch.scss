@@ -1,0 +1,8 @@
+.slider-switch__toggle {
+  @include button;
+  width: 6px;
+  height: 6px;
+  background-color: $basic-color;
+  border-radius: 50%;
+  opacity: 0.3;
+}
