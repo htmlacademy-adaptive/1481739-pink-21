@@ -6,14 +6,3 @@ $mobile-size-width: 280px;
 $font-family: "Open Sans", "Arial", sans-serif;
 $link-color: rgb(210, 40, 86);
 $button-green:  rgb(42, 171, 109);
-
-@mixin button() {
-  background-color: transparent;
-  border: none;
-}
-
-@mixin reset() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
