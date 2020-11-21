@@ -1,5 +1,5 @@
 .slider-switch__toggle {
-  @include button;
+  @include button-reset;
   width: 6px;
   height: 6px;
   background-color: $basic-color;

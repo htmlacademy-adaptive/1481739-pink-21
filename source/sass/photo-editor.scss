@@ -1,0 +1,52 @@
+.photo-editor__slogan {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: $mobile-size-width;
+  margin: 0 auto;
+}
+
+.photo-editor__background {
+  background-color: $basic-grey;
+  padding-top: 20px;
+  padding-bottom: 27px;
+}
+
+.photo-editor__wrapper {
+  margin: 0 auto;
+  width: $mobile-size-width;
+  background-color: $basic-grey;
+}
+
+.photo-editor__tools {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 42px;
+  margin-bottom: 37px;
+}
+
+.photo-editor__button {
+  @include button-reset;
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  margin-bottom: 12px;
+
+  &--post {
+    color: $link-color;
+    border: 3px solid $link-color;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+
+  &--cancel {
+    opacity: 0.1;
+    border: 3px solid;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+}

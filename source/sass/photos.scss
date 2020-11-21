@@ -1,0 +1,16 @@
+.photos {
+  padding-top: 54px;
+}
+
+.photos__list {
+  @include list-reset;
+  margin-top: 60px;
+}
+
+.photos__intro {
+  width: $mobile-size-width;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
