@@ -1,0 +1,27 @@
+.form-selection {
+  border: none;
+  padding: 0;
+  background-color: $basic-grey;
+}
+
+.form-selection__wrapper {
+  width: $mobile-size-width;
+  margin: 0 auto;
+}
+
+.form-selection__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $link-color;
+}
+
+.form-selection__list {
+  @include reset;
+}
+
+.form-selection__label {
+  font-size: 18px;
+  line-height: 30px;
+}
