@@ -1,3 +1,10 @@
+.tariffs-data {
+  &--ground {
+    background-color: $basic-color;
+    color: $basic-white;
+  }
+}
+
 .tariffs-data__name {
   font-size: 16px;
   line-height: 30px;
@@ -12,11 +19,4 @@
 .tariffs-data__function {
   font-size: 14px;
   line-height: 30px;
-}
-
-.tariffs-data {
-  &--ground {
-    background-color: $basic-color;
-    color: $basic-white;
-  }
 }

@@ -4,8 +4,8 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $basic-white;
-  background-color: rgb(42, 171, 109);
-  border: 2px solid rgb(42, 171, 109);
+  background-color: $button-green;
+  border: 2px solid $button-green;
   border-radius: 1px;
   padding: 12px 44px;
 }
@@ -15,13 +15,13 @@
   margin: 0 auto;
 }
 
-.form__legend {
+.form__note {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+}
 
-  &--star {
-    color: $link-color;
-  }
+.form__star {
+  color: $link-color;
 }

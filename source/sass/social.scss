@@ -1,8 +1,7 @@
 .social__list {
-  list-style: none;
+  @include reset;
   display: flex;
   justify-content: space-around;
-  padding: 0;
 }
 
 .social__item {

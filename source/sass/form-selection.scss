@@ -18,9 +18,7 @@
 }
 
 .form-selection__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include reset;
 }
 
 .form-selection__label {
