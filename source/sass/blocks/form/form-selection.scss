@@ -18,7 +18,7 @@
 }
 
 .form-selection__list {
-  @include reset;
+  @include list-reset;
 }
 
 .form-selection__label {

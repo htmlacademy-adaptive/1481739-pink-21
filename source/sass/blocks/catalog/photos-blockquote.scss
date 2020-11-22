@@ -1,0 +1,40 @@
+.photos-blockquote {
+  margin: 0;
+  padding: 14px 10px 26px 17px;
+}
+
+.photos-blockquote__user {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.photos-blockquote__time {
+  display: inline-block;
+  margin: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photos-blockquote__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos-blockquote__like {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $link-color;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,20 @@
+.range-photo-editor__scale {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: $basic-color;
+  margin-left: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $basic-white;
+    border: 2px solid $link-color;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 193px;
+  }
+}
