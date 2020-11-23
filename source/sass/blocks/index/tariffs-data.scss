@@ -3,6 +3,10 @@
     background-color: $basic-color;
     color: $basic-white;
   }
+
+  &--border {
+    border: 2px solid $basic-grey;
+  }
 }
 
 .tariffs-data__name {

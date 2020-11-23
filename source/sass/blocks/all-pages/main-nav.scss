@@ -16,6 +16,10 @@
   @include list-reset;
   display: none;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .main-nav__link {

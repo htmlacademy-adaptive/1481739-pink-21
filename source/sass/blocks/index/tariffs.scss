@@ -4,11 +4,33 @@
 }
 
 .tariffs__table {
-  border: 2px solid rgb(229, 229, 229);
+  overflow: hidden;
+  border: 2px solid $border-grey;
+  border-collapse: collapse;
 }
 
 .tariffs__data {
-  border: 2px solid rgb(229, 229, 229);
+  width: 276px;
+  border: 2px solid $basic-grey;
+
+  &--pink {
+    position: relative;
+  }
+
+    &--pink::before {
+      position: absolute;
+      content: "Розовый фильтр";
+    }
+
+    &--smile::before {
+      position: absolute;
+      content: "Смайлики";
+    }
+
+    &--comments::before {
+      position: absolute;
+      content: "Комментарии";
+    }
 }
 
 .tariffs__switch {

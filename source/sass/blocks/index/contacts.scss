@@ -1,11 +1,11 @@
 .contacts {
-  width: $mobile-size-width;
-  margin: 0 auto;
   text-align: center;
+  padding-top: 47px;
 }
 
 .contacts__wrapper {
-  padding: 47px 0 40px 0;
+  width: $mobile-size-width;
+  margin: 0 auto;
 }
 
 .contacts__call {
