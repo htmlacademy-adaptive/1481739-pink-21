@@ -1,5 +1,8 @@
 .tariffs {
-  width: $mobile-size-width;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -10,30 +13,47 @@
 }
 
 .tariffs__data {
+  padding: 25px 20px;
   width: 276px;
   border: 2px solid $basic-grey;
+  text-transform: uppercase;
 
   &--pink {
     position: relative;
-  }
+    display: flex;
+    justify-content: space-between;
 
-    &--pink::before {
-      position: absolute;
+    &::before {
       content: "Розовый фильтр";
     }
+  }
 
-    &--smile::before {
-      position: absolute;
+  &--smile {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
       content: "Смайлики";
     }
+  }
 
-    &--comments::before {
-      position: absolute;
+  &--comments {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
       content: "Комментарии";
     }
+  }
 }
 
 .tariffs__switch {
   display: flex;
   justify-content: center;
+}
+
+.tariffs__row {
+  display: flex;
 }

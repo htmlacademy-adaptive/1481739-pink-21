@@ -10,17 +10,22 @@
 }
 
 .tariffs-data__name {
+  margin: 0;
   font-size: 16px;
   line-height: 30px;
+  text-align: center;
 }
 
 .tariffs-data__price {
+  margin: 0;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  text-align: center;
 }
 
 .tariffs-data__function {
+  display: none;
   font-size: 14px;
   line-height: 30px;
 }

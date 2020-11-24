@@ -45,12 +45,31 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+}
+
 .page-header__wrapper {
   width: $mobile-size-width;
   margin: 0 auto;
   display: flex;
-  position: relative;
   padding: 19px 0 18px 0;
+
+  @media (min-width: $tablet-width) {
+    width: $desktop-size-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-size-width;
+  }
 }
 
 .page-header__title {
