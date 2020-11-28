@@ -1,6 +1,14 @@
 .page-footer {
   width: $mobile-size-width;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .page-footer__wrapper {
@@ -8,6 +16,11 @@
   align-items: center;
   flex-direction: column;
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .page-footer__copyright {

@@ -1,47 +1,112 @@
 .advantages {
-  position: relative;
-  padding-top: 46px;
+  margin-top: 46px;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 157px;
-    height: 289px;
-    bottom: 0;
-    left: 25%;
-    background-image: url("../img/smile-phone.jpg");
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 77px;
   }
 }
 
-.advantages__wrapper {
+.advantages-container {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__wrapper-text {
   margin: 0 auto;
+  width: $mobile-size-width;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .advantages__text {
   margin: 0;
+  padding-bottom: 35px;
   font-weight: 300;
   font-size: 24px;
   text-align: center;
-  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.advantages__wrapper-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $basic-grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 780px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 490px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 710px;
+  }
+
+  &--friends::after {
+    position: absolute;
+    content: "";
+    width: 157px;
+    height: 289px;
+    background-image: url("../img/smile-phone.jpg");
+    margin: 0 auto;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+
+    @media (min-width: $tablet-width) {
+      right: 50%;
+      ransform: translateX(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .advantages__list {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 83px;
   position: relative;
-  padding: 50px 0 48px 0;
   list-style: none;
   text-align: center;
-  background-color: rgb(242, 242, 242);
-  min-height: 750px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    bottom: 100%;
-    left: 0;
-    border-style: solid;
-    border-width: 0 0 35px 320px;
-    border-color: transparent transparent #f2f2f2 transparent;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }

@@ -1,17 +1,93 @@
 .tariffs {
-  width: $mobile-size-width;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
+  background-color: $basic-grey;
+}
+
+.tariffs__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .tariffs__table {
-  border: 2px solid rgb(229, 229, 229);
+  overflow: hidden;
+  border: 2px solid $border-grey;
+  border-collapse: collapse;
+  background-color: $basic-white;
 }
 
 .tariffs__data {
-  border: 2px solid rgb(229, 229, 229);
+  padding: 25px 20px;
+  width: 276px;
+  border: 2px solid $basic-grey;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    padding: 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    padding: 19px 0;
+  }
+
+  &--pink {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "Розовый фильтр";
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  &--smile {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "Смайлики";
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  &--comments {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "Комментарии";
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
 }
 
 .tariffs__switch {
   display: flex;
   justify-content: center;
+}
+
+.tariffs__row {
+  display: flex;
 }

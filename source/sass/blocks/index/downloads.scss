@@ -1,11 +1,48 @@
 .downloads {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.downloads__container {
   background-color: $basic-color;
+  margin-top: 311px;
+  padding: 28px 0 38px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    background-color: transparent;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
 }
 
 .downloads__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 28px 0 38px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+.downloads__wrapper-slogan {
+  width: $mobile-size-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .downloads__slogan {
@@ -14,6 +51,18 @@
   color: $basic-white;
   font-weight: 300;
   font-size: 24px;
+  line-height: 120%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 17px;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .downloads__link {
@@ -28,6 +77,14 @@
   width: 100%;
   padding: 15px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .downloads__list {
@@ -35,6 +92,14 @@
   margin: 32px 0;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $desktop-width) {
+    margin: 46px 0 38px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 67px 0 58px 0;
+  }
 }
 
 .downloads__text {
@@ -44,4 +109,9 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

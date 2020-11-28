@@ -1,5 +1,14 @@
 .reviews-item {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews-item__author-name {
@@ -7,14 +16,36 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews-item__text {
   font-size: 14px;
   line-height: 30px;
   margin: 31px 0 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews-item__author-info {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
