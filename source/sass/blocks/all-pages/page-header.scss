@@ -71,11 +71,11 @@
   padding: 19px 0 18px 0;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-size-width;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-size-width;
+    width: 940px;
     padding-top: 48px;
   }
 }
