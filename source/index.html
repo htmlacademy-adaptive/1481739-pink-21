@@ -10,40 +10,39 @@
 
 <body class="page__body">
   <header class="page-header page-header--picture">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Переключение меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Переключение меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Приложение Пинк</h1>
-    <section class="downloads">
+    <section class="page-header__downloads downloads">
       <div class="downloads__wrapper-slogan">
         <p class="downloads__slogan">Взгляните на жизнь иначе!</p>
       </div>
@@ -96,6 +95,9 @@
         </div>
       </div>
     </section>
+  </header>
+  <main class="page-main page-main__index">
+    <h1 class="visually-hidden">Приложение Пинк</h1>
     <section class="advantages">
       <div class="advantages__wrapper-text">
         <h2 class="visually-hidden">Преимущества приложения</h2>
@@ -105,38 +107,42 @@
         <p class="advantages__text">Нам есть, что вам<br>
           предложить!</p>
       </div>
-      <div class="advantages__wrapper-list">
-        <ul class="advantages__list">
-          <li class="advantages__item advantages-item advantages-item--mood">
-            <h3 class="advantages-item__title">Поднимает настроение</h3>
-            <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию
-              буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item advantages-item advantages-item--change">
-            <h3 class="advantages-item__title">Меняет мир вокруг</h3>
-            <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы
-              усилить эффект</p>
-          </li>
-          <li class="advantages__item advantages-item advantages-item--friends">
-            <h3 class="advantages-item__title">Заводит новых друзей</h3>
-            <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых</p>
-          </li>
-        </ul>
+      <div class="advantages__wrapper-list advantages__wrapper-list--friends">
+        <div class="advantages-container">
+          <ul class="advantages__list advantages__list">
+            <li class="advantages__item advantages-item advantages-item--mood">
+              <h3 class="advantages-item__title">Поднимает настроение</h3>
+              <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages-item advantages-item--change">
+              <h3 class="advantages-item__title">Меняет мир вокруг</h3>
+              <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы
+                усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages-item advantages-item--friends">
+              <h3 class="advantages-item__title">Заводит новых друзей</h3>
+              <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="research">
       <div class="research__wrapper">
         <h2 class="visually-hidden">Исследование ученых</h2>
-        <p class="research__slogan">
-          "Эффект на 24 часа!"
-        </p>
-        <p class="research__description">
-          Британские ученые провели исследование и доказали, что положительный эффект от использования приложения
-          длится целые сутки!
-        </p>
-        <a class="research__link" href="#">Узнать больше об исследовании</a>
+        <div class="research__container">
+          <p class="research__slogan">
+            "Эффект на 24 часа!"
+          </p>
+          <p class="research__description">
+            Британские ученые провели исследование и доказали, что положительный эффект от использования приложения
+            длится целые сутки!
+          </p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
     <section class="reviews">
@@ -144,8 +150,8 @@
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item reviews-item slider__item">
-            <cite class="reviews-item__author-name">Николай Петров</cite>
             <p class="reviews-item__author-info">25 лет, водитель трамвая</p>
+            <cite class="reviews-item__author-name">Николай Петров</cite>
             <p class="reviews-item__text">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
               привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
@@ -234,16 +240,19 @@
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__call">Остались вопросы?<br>
           Свяжитесь с нами!</p>
-        <p class="contacts__tel contacts-feedback">Звоните:<br><a class="contacts-feedback__link"
-            href="tel:+78125556666">+7 (812)
-            555-66-66</a></p>
-        <p class="contacts__mail contacts-feedback">Пишите:<br><a class="contacts-feedback__link"
-            href="#">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__address contacts-feedback">Приезжайте в гости:<br><a class="contacts-feedback__link"
-            href="#">ул.
-            Большая
-            Конюшенная, 19/8</a></p>
+        <div class="contacts__container">
+          <p class="contacts__tel contacts-feedback">Звоните:<br><a class="contacts-feedback__link"
+              href="tel:+78125556666">+7 (812)
+              555-66-66</a></p>
+          <p class="contacts__mail contacts-feedback">Пишите:<br><a class="contacts-feedback__link"
+              href="#">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__address contacts-feedback">Приезжайте в гости:<br><a class="contacts-feedback__link"
+              href="#">ул.
+              Большая
+              Конюшенная, 19/8</a>
+          </p>
+        </div>
       </div>
       <img class="contacts__map" src="img/map.jpg" width="320px" height="200" alt="Карта с нашим местоположением">
     </section>

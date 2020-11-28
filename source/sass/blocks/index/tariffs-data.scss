@@ -28,4 +28,8 @@
   display: none;
   font-size: 14px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

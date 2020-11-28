@@ -1,8 +1,16 @@
 .slider-switch__toggle {
   @include button-reset;
-  width: 6px;
-  height: 6px;
-  background-color: $basic-color;
-  border-radius: 50%;
-  opacity: 0.3;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--current::before {
+    border: 2px solid $basic-color;
+  }
 }
