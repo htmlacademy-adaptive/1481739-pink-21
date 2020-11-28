@@ -59,7 +59,6 @@
   flex-direction: column;
   align-items: center;
   background-color: $basic-grey;
-  // background-image: url("../img/grey-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -73,40 +72,26 @@
     min-height: 710px;
   }
 
-  &--friends {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 157px;
-      height: 289px;
-      background-image: url("../img/smile-phone.jpg");
-      margin: 0 auto;
-      bottom: 0;
+  &--friends::after {
+    position: absolute;
+    content: "";
+    width: 157px;
+    height: 289px;
+    background-image: url("../img/smile-phone.jpg");
+    margin: 0 auto;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+
+    @media (min-width: $tablet-width) {
       right: 50%;
-      transform: translateX(50%);
+      ransform: translateX(-50%);
+    }
 
-      @media (min-width: $tablet-width) {
-        right: 50%;
-        transform: translateX(-50%);
-      }
-
-      @media (min-width: $desktop-width) {
-        display: none;
-      }
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
-
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   width: 0;
-  //   height: 0;
-  //   bottom: 100%;
-  //   left: 0;
-  //   border-style: solid;
-  //   border-width: 0 0 35px 320px;
-  //   border-color: transparent transparent #f2f2f2 transparent;
-  // }
 }
 
 .advantages__list {
