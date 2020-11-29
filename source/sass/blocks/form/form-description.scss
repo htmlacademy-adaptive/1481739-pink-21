@@ -1,7 +1,19 @@
 .form-description {
   width: $mobile-size-width;
   margin: 0 auto;
+  margin-bottom: 52px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 45px 60px;
+    margin-bottom: 70px;
+    border: 2px solid $border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form-description__subtitle {
@@ -15,8 +27,17 @@
 .form-description__text {
   font-size: 18px;
   line-height: 30px;
-  width: 276px;
+  width: 100%;
   text-align: center;
   border: 2px solid $border-grey;
   border-radius: 1px;
+}
+
+.form-description--story {
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 }

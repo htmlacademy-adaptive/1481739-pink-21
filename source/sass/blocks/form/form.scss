@@ -1,3 +1,21 @@
+.form {
+  margin-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 82px;
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 82px;
+    display: grid;
+    grid-template-columns: 430px 430px;
+    gap: 64px 72px;
+  }
+}
+
 .form__button {
   font-weight: bold;
   font-size: 18px;
@@ -13,6 +31,18 @@
 .form__wrapper-button {
   width: $mobile-size-width;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .form__note {

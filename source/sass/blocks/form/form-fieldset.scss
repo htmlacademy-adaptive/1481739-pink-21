@@ -3,11 +3,25 @@
   width: $mobile-size-width;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 2px solid $border-grey;
+  }
 }
 
 .form-fieldset__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 56px;
+  }
 }
 
 .form-fieldset__label {
@@ -21,5 +35,29 @@
   font-size: 18px;
   line-height: 30px;
   color: $basic-color;
+  width: 100%;
   border: 2px solid $border-grey;
+}
+
+.form-fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 2px solid $border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.form-fieldset--data {
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
 }

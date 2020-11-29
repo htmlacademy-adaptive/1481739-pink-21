@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -22,12 +23,12 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link" href="catalog.html">
               Фотографии
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link">
               Конкурс
             </a>
           </li>
@@ -47,10 +48,13 @@
     <h1 class="visually-hidden">Приложение Пинк</h1>
     <section class="entry">
       <div class="entry__wrapper">
+        <div class="entry__text-wrapper">
         <p class="entry__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
           бонусную карту!</p>
+          <p class="entry__text-request">Пожалуйста, заполните форму ниже:</p>
+        </div>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form-fieldset">
+          <fieldset class="form-fieldset form-fieldset--data">
             <div class="form-fieldset__wrapper">
               <label class="form-fieldset__label" for="surname">Фамилия:</label>
               <input class="form-fieldset__input" id="surname" name="surname" placeholder="Укажите фамилию *">
@@ -64,9 +68,9 @@
               <input class="form-fieldset__input" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <fieldset class="form-selection">
+          <fieldset class="form-selection form-selection--achievements">
+            <legend class="form-selection__subtitle">Ваши безбашенные достижения в путешествии</legend>
             <div class="form-selection__wrapper">
-              <legend class="form-selection__subtitle">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form-selection__list">
                 <li class="form-selection__item">
                   <input class="visually-hidden form-selection__input" type="checkbox" id="selfie" name="selfie"
@@ -96,7 +100,8 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form-fieldset">
+          <fieldset class="form-fieldset form-fieldset--contacts">
+            <legend class="form-selection__subtitle form-selection__subtitle--contacts">Контактная информация</legend>
             <div class="form-fieldset__wrapper">
               <label class="form-fieldset__label" for="tel">Номер телефона</label>
               <input class="form-fieldset__input" id="tel" name="tel" value="Номер, пожалуйста">
@@ -106,10 +111,10 @@
               <input class="form-fieldset__input" id="mail" name="mail" value="Введите почту *">
             </div>
           </fieldset>
-          <fieldset class="form-selection">
+          <fieldset class="form-selection form-selection--app">
+            <legend class="form-selection__subtitle">С каким приложением путешествовали?</legend>
             <div class="form-selection__wrapper">
-              <legend class="form-selection__subtitle">С каким приложением путешествовали?</legend>
-              <ul class="form-selection__list">
+              <ul class="form-selection__list form-selection__list--app">
                 <li class="form-selection__item">
                   <input class="visually-hidden form-selection__radio" type="radio" id="ios" name="ios" checked>
                   <label class="form-selection__label" for="ios">Pink для iOS</label>
@@ -125,7 +130,7 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form-description">
+          <fieldset class="form-description form-description--story">
             <legend class="form-description__subtitle">Опишите свои эмоции</legend>
             <div class="form-description__wrapper">
               <label class="form-description__label" for="text" aria-label="Написать отзыв об отдыхе"></label>
