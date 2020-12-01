@@ -1,12 +1,6 @@
 .form-fieldset {
   border: none;
-  width: $mobile-size-width;
-  margin: 0 auto;
   padding: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 620px;
-  }
 
   @media (min-width: $desktop-width) {
     border: 2px solid $border-grey;

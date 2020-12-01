@@ -16,9 +16,6 @@
 }
 
 .form-selection__wrapper {
-  width: $mobile-size-width;
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
     width: 100%;
   }

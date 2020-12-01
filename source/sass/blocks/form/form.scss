@@ -29,11 +29,7 @@
 }
 
 .form__wrapper-button {
-  width: $mobile-size-width;
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
-    width: 620px;
     display: flex;
     justify-content: space-between;
   }

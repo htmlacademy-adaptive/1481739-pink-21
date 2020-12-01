@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="page-header page-header--inner-background">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper container">
       <a class="page-header__logo">
         <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
       </a>
@@ -40,7 +40,7 @@
         </ul>
       </nav>
     </div>
-    <div class="page-header__wrapper-slogan">
+    <div class="container">
       <p class="page-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
   </header>
@@ -48,13 +48,13 @@
     <h1 class="visually-hidden">Приложение Пинк</h1>
     <section class="entry">
       <div class="entry__wrapper">
-        <div class="entry__text-wrapper">
+        <div class="entry__text-wrapper container">
         <p class="entry__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
           бонусную карту!</p>
           <p class="entry__text-request">Пожалуйста, заполните форму ниже:</p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form-fieldset form-fieldset--data">
+          <fieldset class="form-fieldset form-fieldset--data container">
             <div class="form-fieldset__wrapper">
               <label class="form-fieldset__label" for="surname">Фамилия:</label>
               <input class="form-fieldset__input" id="surname" name="surname" placeholder="Укажите фамилию *">
@@ -70,7 +70,7 @@
           </fieldset>
           <fieldset class="form-selection form-selection--achievements">
             <legend class="form-selection__subtitle">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form-selection__wrapper">
+            <div class="form-selection__wrapper container">
               <ul class="form-selection__list">
                 <li class="form-selection__item">
                   <input class="visually-hidden form-selection__input" type="checkbox" id="selfie" name="selfie"
@@ -100,7 +100,7 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form-fieldset form-fieldset--contacts">
+          <fieldset class="form-fieldset form-fieldset--contacts container">
             <legend class="form-selection__subtitle form-selection__subtitle--contacts">Контактная информация</legend>
             <div class="form-fieldset__wrapper">
               <label class="form-fieldset__label" for="tel">Номер телефона</label>
@@ -113,7 +113,7 @@
           </fieldset>
           <fieldset class="form-selection form-selection--app">
             <legend class="form-selection__subtitle">С каким приложением путешествовали?</legend>
-            <div class="form-selection__wrapper">
+            <div class="form-selection__wrapper container">
               <ul class="form-selection__list form-selection__list--app">
                 <li class="form-selection__item">
                   <input class="visually-hidden form-selection__radio" type="radio" id="ios" name="ios" checked>
@@ -130,7 +130,7 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form-description form-description--story">
+          <fieldset class="form-description form-description--story container">
             <legend class="form-description__subtitle">Опишите свои эмоции</legend>
             <div class="form-description__wrapper">
               <label class="form-description__label" for="text" aria-label="Написать отзыв об отдыхе"></label>
@@ -138,7 +138,7 @@
                 rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
           </fieldset>
-          <div class="form__wrapper-button">
+          <div class="form__wrapper-button container">
             <button class="form__button" type="submit">Отправить форму</button>
             <p class="form__note"><span class="form__star">*</span> — обязательные поля</p>
           </div>
@@ -161,7 +161,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
