@@ -2,11 +2,23 @@
   border: none;
   padding: 0;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    border: 2px solid $border-grey;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form-selection__wrapper {
-  width: $mobile-size-width;
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .form-selection__subtitle {
@@ -19,9 +31,58 @@
 
 .form-selection__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 }
 
 .form-selection__label {
   font-size: 18px;
   line-height: 30px;
+}
+
+.form-selection--app {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: block;
+  }
+}
+
+.form-selection--achievements {
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.form-selection__subtitle--contacts {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.form-selection__list--app {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
