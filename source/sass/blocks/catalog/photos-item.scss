@@ -1,11 +1,18 @@
+.photos-item {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
 .photos-item__statement {
-  width: $mobile-size-width;
+  width: 100%;
   margin: 0 auto;
-  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+  }
 }
 
 .photos-item__wrapper {
-  width: $mobile-size-width;
-  margin: 0 auto;
   margin-top: 20px;
 }

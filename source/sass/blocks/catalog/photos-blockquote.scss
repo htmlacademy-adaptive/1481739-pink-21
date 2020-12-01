@@ -1,6 +1,6 @@
 .photos-blockquote {
-  margin: 0;
   padding: 14px 10px 26px 17px;
+  background-color: #f2f2f2;
 }
 
 .photos-blockquote__user {
@@ -9,6 +9,13 @@
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
+
+  &--state {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
 }
 
 .photos-blockquote__time {
@@ -24,6 +31,13 @@
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+
+  &--state {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
 }
 
 .photos-blockquote__like {
@@ -37,4 +51,14 @@
   padding-left: 30px;
   margin-top: 15px;
   margin-bottom: 0;
+
+  &--state {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
 }

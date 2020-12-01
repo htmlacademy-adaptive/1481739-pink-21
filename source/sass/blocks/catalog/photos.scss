@@ -1,16 +1,37 @@
 .photos {
   padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
 }
 
 .photos__list {
   @include list-reset;
-  margin-top: 60px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .photos__intro {
-  width: $mobile-size-width;
-  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 150px;
+  }
+}
+
+.photos__main__link {
+  margin: 0 auto;
 }
