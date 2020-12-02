@@ -1,0 +1,7 @@
+.photos-main__statement {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
