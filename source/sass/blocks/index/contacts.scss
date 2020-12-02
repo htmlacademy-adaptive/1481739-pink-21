@@ -3,19 +3,6 @@
   padding-top: 47px;
 }
 
-.contacts__wrapper {
-  width: $mobile-size-width;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 660px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 940px;
-  }
-}
-
 .contacts__call {
   font-weight: 300;
   font-size: 24px;

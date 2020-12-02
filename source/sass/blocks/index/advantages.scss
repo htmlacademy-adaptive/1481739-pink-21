@@ -22,19 +22,6 @@
   }
 }
 
-.advantages__wrapper-text {
-  margin: 0 auto;
-  width: $mobile-size-width;
-
-  @media (min-width: $tablet-width) {
-    width: 620px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 940px;
-  }
-}
-
 .advantages__text {
   margin: 0;
   padding-bottom: 35px;
