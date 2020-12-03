@@ -9,6 +9,10 @@
   }
 }
 
+.tariffs-data-header {
+  padding: 12px 20px 25px;
+}
+
 .tariffs-data__name {
   margin: 0;
   font-size: 16px;
@@ -32,4 +36,15 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+.tariffs-data--hit {
+  position: relative;
+}
+
+.tariffs-data__symbol {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
 }

@@ -1,6 +1,5 @@
 .advantages-item {
   width: 280px;
-  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     width: 330px;
@@ -12,7 +11,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
@@ -22,7 +21,7 @@
 
 .advantages-item__description {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 31px;
   font-size: 14px;
   line-height: 24px;
 
