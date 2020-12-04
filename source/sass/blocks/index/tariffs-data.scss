@@ -1,16 +1,11 @@
-.tariffs-data {
-  &--ground {
-    background-color: $basic-color;
-    color: $basic-white;
-  }
-
-  &--border {
-    border: 2px solid $basic-grey;
-  }
-}
-
 .tariffs-data-header {
-  padding: 12px 20px 25px;
+  background-color: $basic-color;
+  color: $basic-white;
+  padding: 12px 20px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 20px 12px;
+  }
 }
 
 .tariffs-data__name {
@@ -24,7 +19,7 @@
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   text-align: center;
 }
 
@@ -35,6 +30,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    text-transform: none;
+    padding-left: 12px;
   }
 }
 
@@ -47,4 +44,13 @@
   content: "";
   top: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 61px;
+    height: 61px;
+  }
+}
+
+.tariffs-data--empty {
+  background-color: $basic-grey;
 }

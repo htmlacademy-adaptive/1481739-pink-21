@@ -4,6 +4,10 @@
   line-height: 25px;
   margin: 0;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 27px;
+  }
 }
 
 .contacts-feedback__link {

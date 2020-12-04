@@ -1,9 +1,19 @@
 .reviews {
   text-align: center;
   margin: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 84px 0 13px;
+  }
 }
 
 .reviews__prev,
 .reviews__next {
   display: none;
+}
+
+.reviews__switch {
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
+  }
 }

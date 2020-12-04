@@ -6,12 +6,17 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 3px 0 8px 0;
   }
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+  }
 }
