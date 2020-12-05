@@ -9,6 +9,10 @@
     justify-content: space-between;
     padding: 3px 0 8px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 3px 0 39px 0;
+  }
 }
 
 .page-footer__copyright {
@@ -18,5 +22,9 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }

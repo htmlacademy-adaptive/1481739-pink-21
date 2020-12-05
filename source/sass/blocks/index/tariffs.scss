@@ -4,12 +4,18 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 98px;
+  padding-top: 93px;
+  padding-bottom: 6px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     padding-top: 94px;
     padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 155px;
+    padding-bottom: 98px;
   }
 }
 
@@ -32,7 +38,7 @@
 
   @media (min-width: $desktop-width) {
     width: 233px;
-    padding: 19px 0;
+    padding: 14px 0;
   }
 
   &--pink {
@@ -87,7 +93,7 @@
 .tariffs__switch {
   display: flex;
   justify-content: center;
-  padding: 45px 0;
+  padding: 39px 0;
 
   @media (min-width: $tablet-width) {
     display: none;

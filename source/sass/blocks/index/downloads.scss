@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
 
 .downloads__container {
@@ -16,7 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
+    padding-top: 36px;
   }
 }
 
@@ -50,6 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     font-size: 50px;
     line-height: 68px;
   }
@@ -91,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 67px 0 45px 0;
+    margin: 67px 0 48px 0;
   }
 }
 

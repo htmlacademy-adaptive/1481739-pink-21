@@ -6,19 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 77px;
-  }
-}
-
-.advantages-container {
-  @media (min-width: $tablet-width) {
-    width: 620px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 940px;
-    margin: 0 auto;
+    margin-top: 62px;
   }
 }
 
@@ -57,7 +45,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 710px;
+    min-height: 635px;
+    margin-top: 50px;
   }
 
   &--friends::after {
@@ -100,5 +89,10 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 362px;
+    width: 100%;
+    text-align: center;
   }
 }
