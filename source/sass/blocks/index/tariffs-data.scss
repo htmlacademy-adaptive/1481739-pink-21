@@ -53,10 +53,6 @@
   }
 }
 
-.tariffs-data--hit {
-  position: relative;
-}
-
 .tariffs-data__symbol {
   position: absolute;
   content: "";
@@ -74,6 +70,13 @@
   }
 }
 
-.tariffs-data--empty {
-  background-color: $basic-grey;
+.tariffs-data {
+  &--empty {
+    background-color: $basic-grey;
+  }
+
+  &--hit {
+    position: relative;
+  }
 }
+

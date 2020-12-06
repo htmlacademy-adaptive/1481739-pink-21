@@ -41,45 +41,14 @@
     padding: 14px 0;
   }
 
-  &--pink {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-
-    &::before {
-      content: "Розовый фильтр";
-      font-size: 14px;
-      line-height: 30px;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
-  }
-
-  &--smile {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-
-    &::before {
-      content: "Смайлики";
-      font-size: 14px;
-      line-height: 30px;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
-  }
-
+  &--pink,
+  &--smile,
   &--comments {
     position: relative;
     display: flex;
     justify-content: space-between;
 
     &::before {
-      content: "Комментарии";
       font-size: 14px;
       line-height: 30px;
 
@@ -87,6 +56,18 @@
         display: none;
       }
     }
+  }
+
+  &--pink::before {
+    content: "Розовый фильтр";
+  }
+
+  &--smile::before {
+    content: "Смайлики";
+  }
+
+  &--comments::before {
+    content: "Комментарии";
   }
 }
 

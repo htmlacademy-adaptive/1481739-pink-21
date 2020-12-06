@@ -24,6 +24,29 @@
       background-image: url("../img/shadow-phone.svg");
       background-repeat: no-repeat;
     }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 186px;
+      height: 300px;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-repeat: no-repeat;
+    }
+
+    &--mood::before {
+      background-image: url("../img/phone1.png");
+    }
+
+    &--change::before {
+      background-image: url("../img/phone2.png");
+    }
+
+    &--friends::before {
+      background-image: url("../img/phone3.png");
+    }
   }
 }
 
@@ -63,56 +86,3 @@
   }
 }
 
-.advantages-item--mood {
-  @media (min-width: $desktop-width) {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 186px;
-      height: 300px;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/phone1.png");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-.advantages-item--change {
-  @media (min-width: $desktop-width) {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 186px;
-      height: 300px;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/phone2.png");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-.advantages-item--friends {
-  @media (min-width: $desktop-width) {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 186px;
-      height: 300px;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/phone3.png");
-      background-repeat: no-repeat;
-    }
-  }
-}
