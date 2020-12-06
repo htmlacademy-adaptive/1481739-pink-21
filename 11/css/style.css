@@ -428,7 +428,22 @@ img {
         left: 50%;
         transform: translateX(-50%);
         background-image: url("../img/shadow-phone.svg");
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat; }
+      .advantages-item::before {
+        position: absolute;
+        content: "";
+        width: 186px;
+        height: 300px;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-repeat: no-repeat; }
+      .advantages-item--mood::before {
+        background-image: url("../img/phone1.png"); }
+      .advantages-item--change::before {
+        background-image: url("../img/phone2.png"); }
+      .advantages-item--friends::before {
+        background-image: url("../img/phone3.png"); } }
 
 .advantages-item__title {
   margin: 0;
@@ -458,48 +473,6 @@ img {
   @media (min-width: 960px) {
     .advantages-item__break {
       display: none; } }
-
-@media (min-width: 960px) {
-  .advantages-item--mood {
-    position: relative; }
-    .advantages-item--mood::before {
-      position: absolute;
-      content: "";
-      width: 186px;
-      height: 300px;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/phone1.png");
-      background-repeat: no-repeat; } }
-
-@media (min-width: 960px) {
-  .advantages-item--change {
-    position: relative; }
-    .advantages-item--change::before {
-      position: absolute;
-      content: "";
-      width: 186px;
-      height: 300px;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/phone2.png");
-      background-repeat: no-repeat; } }
-
-@media (min-width: 960px) {
-  .advantages-item--friends {
-    position: relative; }
-    .advantages-item--friends::before {
-      position: absolute;
-      content: "";
-      width: 186px;
-      height: 300px;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/phone3.png");
-      background-repeat: no-repeat; } }
 
 .research {
   display: none; }
@@ -601,50 +574,28 @@ img {
       display: none; } }
 
 .reviews {
-  text-align: center;
-  margin: 40px 0; }
-  @media (min-width: 660px) {
-    .reviews {
-      margin: 84px 0 13px; } }
-  @media (min-width: 960px) {
-    .reviews {
-      margin: 170px 0 9px; } }
+  text-align: center; }
 
-.reviews__prev,
-.reviews__next {
+.reviews__control {
   display: none; }
   @media (min-width: 960px) {
-    .reviews__prev,
-    .reviews__next {
+    .reviews__control {
       background-color: transparent;
       border: none;
       display: block;
-      position: absolute; } }
-
-.reviews__prev {
-  top: 20%;
-  left: 0; }
-  .reviews__prev::before {
-    position: absolute;
-    content: "";
-    width: 22px;
-    height: 41px;
-    background-image: url("../img/arrow.svg");
-    background-repeat: no-repeat; }
-
-.reviews__next {
-  top: 20%;
-  right: 0; }
-  .reviews__next::after {
-    position: absolute;
-    content: "";
-    width: 22px;
-    height: 41px;
-    top: 20%;
-    right: 0;
-    background-image: url("../img/arrow.svg");
-    background-repeat: no-repeat;
-    transform: scale(-1, 1); }
+      top: 20%;
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 41px;
+      background-repeat: no-repeat; }
+      .reviews__control--prev {
+        left: 0;
+        background-image: url("../img/arrow.svg"); }
+      .reviews__control--next {
+        right: 0;
+        background-image: url("../img/arrow.svg");
+        transform: scale(-1, 1); } }
 
 @media (min-width: 660px) {
   .reviews__switch {
@@ -654,10 +605,17 @@ img {
   .reviews__switch {
     display: none; } }
 
-@media (min-width: 960px) {
-  .reviews__list {
-    padding: 0 75px 20px;
-    position: relative; } }
+.reviews__list {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  @media (min-width: 660px) {
+    .reviews__list {
+      margin: 84px 0 13px; } }
+  @media (min-width: 960px) {
+    .reviews__list {
+      margin: 170px 0 9px;
+      padding: 0 75px 20px;
+      position: relative; } }
 
 .reviews-item {
   margin: 0;
@@ -754,39 +712,22 @@ img {
     .tariffs__data {
       width: 233px;
       padding: 14px 0; } }
-  .tariffs__data--pink {
+  .tariffs__data--pink, .tariffs__data--smile, .tariffs__data--comments {
     position: relative;
     display: flex;
     justify-content: space-between; }
-    .tariffs__data--pink::before {
-      content: "Розовый фильтр";
+    .tariffs__data--pink::before, .tariffs__data--smile::before, .tariffs__data--comments::before {
       font-size: 14px;
       line-height: 30px; }
       @media (min-width: 660px) {
-        .tariffs__data--pink::before {
+        .tariffs__data--pink::before, .tariffs__data--smile::before, .tariffs__data--comments::before {
           display: none; } }
-  .tariffs__data--smile {
-    position: relative;
-    display: flex;
-    justify-content: space-between; }
-    .tariffs__data--smile::before {
-      content: "Смайлики";
-      font-size: 14px;
-      line-height: 30px; }
-      @media (min-width: 660px) {
-        .tariffs__data--smile::before {
-          display: none; } }
-  .tariffs__data--comments {
-    position: relative;
-    display: flex;
-    justify-content: space-between; }
-    .tariffs__data--comments::before {
-      content: "Комментарии";
-      font-size: 14px;
-      line-height: 30px; }
-      @media (min-width: 660px) {
-        .tariffs__data--comments::before {
-          display: none; } }
+  .tariffs__data--pink::before {
+    content: "Розовый фильтр"; }
+  .tariffs__data--smile::before {
+    content: "Смайлики"; }
+  .tariffs__data--comments::before {
+    content: "Комментарии"; }
 
 .tariffs__switch {
   display: flex;
@@ -848,9 +789,6 @@ img {
       font-size: 18px;
       padding-left: 16px; } }
 
-.tariffs-data--hit {
-  position: relative; }
-
 .tariffs-data__symbol {
   position: absolute;
   content: "";
@@ -867,6 +805,9 @@ img {
 
 .tariffs-data--empty {
   background-color: #f2f2f2; }
+
+.tariffs-data--hit {
+  position: relative; }
 
 .contacts {
   text-align: center;
