@@ -1,11 +1,52 @@
 .advantages-item {
-  width: $mobile-size-width;
-  margin: 0 auto;
-  padding-right: 20px;
+  width: 280px;
+  margin-bottom: 30px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 330px;
-    margin-right: 0;
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    margin-bottom: 34px;
+    padding: 0 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 300px;
+      height: 17px;
+      top: -34%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/shadow-phone.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 186px;
+      height: 300px;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-repeat: no-repeat;
+    }
+
+    &--mood::before {
+      background-image: url("../img/phone1.png");
+    }
+
+    &--change::before {
+      background-image: url("../img/phone2.png");
+    }
+
+    &--friends::before {
+      background-image: url("../img/phone3.png");
+    }
   }
 }
 
@@ -13,22 +54,34 @@
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    padding-bottom: 25px;
   }
 }
 
 .advantages-item__description {
   margin: 0;
-  padding-bottom: 25px;
   font-size: 14px;
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.advantages-item__break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

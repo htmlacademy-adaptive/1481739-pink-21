@@ -11,7 +11,7 @@
 <body class="page__body">
   <header class="page-header page-header--picture">
     <div class="page-header__container">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper container">
         <a class="page-header__logo">
           <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
         </a>
@@ -43,11 +43,11 @@
       </div>
     </div>
     <section class="page-header__downloads downloads">
-      <div class="downloads__wrapper-slogan">
+      <div class="downloads__wrapper-slogan container">
         <p class="downloads__slogan">Взгляните на жизнь иначе!</p>
       </div>
       <div class="downloads__container">
-        <div class="downloads__wrapper">
+        <div class="downloads__wrapper container">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <a class="downloads__link" href="#">
             Скачать приложение
@@ -99,7 +99,7 @@
   <main class="page-main page-main__index">
     <h1 class="visually-hidden">Приложение Пинк</h1>
     <section class="advantages">
-      <div class="advantages__wrapper-text">
+      <div class="container">
         <h2 class="visually-hidden">Преимущества приложения</h2>
         <p class="advantages__text">
           Устали от серости мегаполиса?
@@ -108,7 +108,7 @@
           предложить!</p>
       </div>
       <div class="advantages__wrapper-list advantages__wrapper-list--friends">
-        <div class="advantages-container">
+        <div class="container">
           <ul class="advantages__list advantages__list">
             <li class="advantages__item advantages-item advantages-item--mood">
               <h3 class="advantages-item__title">Поднимает настроение</h3>
@@ -118,8 +118,7 @@
             <li class="advantages__item advantages-item advantages-item--change">
               <h3 class="advantages-item__title">Меняет мир вокруг</h3>
               <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы
-                усилить эффект</p>
+                чтобы <br class="advantages-item__break">усилить эффект</p>
             </li>
             <li class="advantages__item advantages-item advantages-item--friends">
               <h3 class="advantages-item__title">Заводит новых друзей</h3>
@@ -131,22 +130,21 @@
       </div>
     </section>
     <section class="research">
-      <div class="research__wrapper">
+      <div class="research__wrapper container">
         <h2 class="visually-hidden">Исследование ученых</h2>
         <div class="research__container">
           <p class="research__slogan">
-            "Эффект на 24 часа!"
+            Эффект<br class="research__slogan-break"> на 24 часа!
           </p>
           <p class="research__description">
-            Британские ученые провели исследование и доказали, что положительный эффект от использования приложения
+            Британские ученые провели исследование<br class="research__break"> и доказали, что положительный эффект<br class="research__break"> от использования приложения
             длится целые сутки!
           </p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </section>
-    <section class="reviews">
-      <div class="reviews__wrapper slider">
+    <section class="reviews container">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item reviews-item slider__item">
@@ -158,8 +156,8 @@
               фотографии!»
             </p>
           </blockquote>
-          <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
-          <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
+          <button class="reviews__control reviews__control--prev" type="button" aria-label="Предыдущий отзыв"></button>
+          <button class="reviews__control reviews__control--next" type="button" aria-label="Следующий отзыв"></button>
           <div class="reviews__switch slider__switch slider-switch">
             <button class="slider-switch__toggle slider-switch__toggle--current" type="button"
               aria-label="Посмотреть первый отзыв"></button>
@@ -167,24 +165,24 @@
             <button class="slider-switch__toggle" type="button" aria-label="Посмотреть третий отзыв"></button>
           </div>
         </div>
-      </div>
     </section>
     <section class="tariffs">
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="tariffs__wrapper">
         <table class="tariffs__table">
           <tr class="tariffs__row">
-            <td class="tariffs__data tariffs-data__function">
+            <td class="tariffs__data tariffs-data tariffs-data__function tariffs-data--empty">
             </td>
-            <td class="tariffs__data tariffs-data tariffs-data--ground">
+            <td class="tariffs__data tariffs-data-header">
               <h3 class="tariffs-data__name">База</h3>
               <p class="tariffs-data__price">1,99 USD</p>
             </td>
-            <td class="tariffs__data tariffs-data tariffs-data--ground tariffs-data--border">
+            <td class="tariffs__data tariffs-data-header tariffs-data--hit">
               <h3 class="tariffs-data__name">Стандарт</h3>
               <p class="tariffs-data__price">3,99 USD</p>
+              <img class="tariffs-data__symbol" src="img/hit.svg" alt="Значок хит продаж">
             </td>
-            <td class="tariffs__data tariffs-data tariffs-data--ground">
+            <td class="tariffs__data tariffs-data-header">
               <h3 class="tariffs-data__name">Анлим</h3>
               <p class="tariffs-data__price">9,99 USD</p>
             </td>
@@ -192,37 +190,37 @@
           <tr class="tariffs__row">
             <td class="tariffs__data tariffs-data tariffs-data__function">Розовый фильтр</td>
             <td class="tariffs__data tariffs__data--pink">
-              <img src="img/yes.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/yes.svg" alt="Функция входит в данный пакет">
             </td>
             <td class="tariffs__data tariffs__data--pink">
-              <img src="img/yes.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/yes.svg" alt="Функция входит в данный пакет">
             </td>
             <td class="tariffs__data tariffs__data--pink">
-              <img src="img/yes.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/yes.svg" alt="Функция входит в данный пакет">
             </td>
           </tr>
           <tr class="tariffs__row">
             <td class="tariffs__data tariffs-data tariffs-data__function">Смайлики</td>
             <td class="tariffs__data tariffs__data--smile">
-              <img src="img/no.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/no.svg" alt="Функция входит в данный пакет">
             </td>
             <td class="tariffs__data tariffs__data--smile">
-              <img src="img/yes.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/yes.svg" alt="Функция входит в данный пакет">
             </td>
             <td class="tariffs__data tariffs__data--smile">
-              <img src="img/yes.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/yes.svg" alt="Функция входит в данный пакет">
             </td>
           </tr>
           <tr class="tariffs__row">
             <td class="tariffs__data tariffs-data tariffs-data__function">Комментарии</td>
             <td class="tariffs__data tariffs__data--comments">
-              <img src="img/no.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/no.svg" alt="Функция входит в данный пакет">
             </td>
             <td class="tariffs__data tariffs__data--comments">
-              <img src="img/no.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/no.svg" alt="Функция входит в данный пакет">
             </td>
             <td class="tariffs__data tariffs__data--comments">
-              <img src="img/yes.svg" alt="Функция входит в данный пакет">
+              <img class="tariffs__icon" src="img/yes.svg" alt="Функция входит в данный пакет">
             </td>
           </tr>
         </table>
@@ -236,29 +234,30 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__call">Остались вопросы?<br>
           Свяжитесь с нами!</p>
         <div class="contacts__container">
-          <p class="contacts__tel contacts-feedback">Звоните:<br><a class="contacts-feedback__link"
-              href="tel:+78125556666">+7 (812)
-              555-66-66</a></p>
-          <p class="contacts__mail contacts-feedback">Пишите:<br><a class="contacts-feedback__link"
-              href="#">mail@htmlacademy.ru</a>
-          </p>
-          <p class="contacts__address contacts-feedback">Приезжайте в гости:<br><a class="contacts-feedback__link"
-              href="#">ул.
-              Большая
-              Конюшенная, 19/8</a>
-          </p>
+          <div class="contacts__wrapper contacts__wrapper-tel">
+          <p class="contacts__tel contacts-feedback">Звоните:</p>
+          <a class="contacts-feedback__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__wrapper contacts__wrapper-mail">
+          <p class="contacts__mail contacts-feedback">Пишите:</p>
+          <a class="contacts-feedback__link" href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__wrapper contacts__wrapper-address">
+          <p class="contacts__address contacts-feedback">Приезжайте в гости:</p>
+          <a class="contacts-feedback__link"href="#">ул. Большая <br> Конюшенная, 19/8</a>
+        </div>
         </div>
       </div>
       <img class="contacts__map" src="img/map.jpg" width="320px" height="200" alt="Карта с нашим местоположением">
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

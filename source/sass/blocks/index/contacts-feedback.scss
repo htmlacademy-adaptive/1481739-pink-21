@@ -3,7 +3,14 @@
   font-size: 18px;
   line-height: 25px;
   margin: 0;
-  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .contacts-feedback__link {

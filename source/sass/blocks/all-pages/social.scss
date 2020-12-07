@@ -1,5 +1,15 @@
 .social {
-  margin: 41px 0;
+  margin: 33px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 36px 0;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 10px;
+  }
 }
 
 .social__list {
@@ -14,7 +24,7 @@
 }
 
 .social__item:not(:last-child) {
-  margin-right: 14px;
+  margin-right: 9px;
 }
 
 .social__link {

@@ -3,26 +3,22 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-top: 54px;
+    margin-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     background-color: $basic-grey;
     margin-top: 0;
+    padding-bottom: 65px;
   }
 }
 
 .research__wrapper {
   @media (min-width: $tablet-width) {
-    width: 620px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
-    @media (min-width: $desktop-width) {
-      width: 940px;
-    }
+    align-items: center;
 
     &::before {
       content: "";
@@ -30,24 +26,37 @@
       width: 238px;
       height: 276px;
       background-image: url("../img/timer.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../img/timer-desktop.svg");
+        width: 298px;
+        height: 345px;
+      }
     }
   }
 }
 
 .research__slogan {
   @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 40px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 28px;
   }
 }
 
 .research__description {
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -55,6 +64,7 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    padding-bottom: 31px;
   }
 }
 
@@ -79,5 +89,32 @@
 
   @media (min-width: $desktop-width) {
     width: 535px;
+    min-height: 200px;
+    margin-right: 35px;
+    margin-top: 45px;
+  }
+}
+
+.research__break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.research__slogan-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
