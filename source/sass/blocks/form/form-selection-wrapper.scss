@@ -1,0 +1,20 @@
+.form-selection-wrapper {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 3px;
+    background-color: transparent;
+  }
+
+  &--app {
+    @media (min-width: $tablet-width) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+}

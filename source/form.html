@@ -68,10 +68,11 @@
               <input class="form-fieldset__input" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
+          <div class="form-selection-wrapper">
           <fieldset class="form-selection form-selection--achievements">
             <legend class="form-selection__subtitle">Ваши безбашенные достижения в путешествии</legend>
             <div class="form-selection__wrapper container">
-              <ul class="form-selection__list">
+              <ul class="form-selection__list form-selection__list--achievements">
                 <li class="form-selection__item">
                   <input class="visually-hidden form-selection__input" type="checkbox" id="selfie" name="selfie"
                     checked>
@@ -100,36 +101,39 @@
               </ul>
             </div>
           </fieldset>
+        </div>
           <fieldset class="form-fieldset form-fieldset--contacts container">
             <legend class="form-selection__subtitle form-selection__subtitle--contacts">Контактная информация</legend>
-            <div class="form-fieldset__wrapper">
-              <label class="form-fieldset__label" for="tel">Номер телефона</label>
+            <div class="form-fieldset__wrapper form-fieldset__wrapper--contacts">
+              <label class="form-fieldset__label form-fieldset__label--contacts" for="tel">Номер телефона</label>
               <input class="form-fieldset__input" id="tel" name="tel" value="Номер, пожалуйста">
             </div>
-            <div class="form-fieldset__wrapper">
-              <label class="form-fieldset__label" for="mail">Адрес почты</label>
+            <div class="form-fieldset__wrapper form-fieldset__wrapper--contacts">
+              <label class="form-fieldset__label form-fieldset__label--contacts" for="mail">Адрес почты</label>
               <input class="form-fieldset__input" id="mail" name="mail" value="Введите почту *">
             </div>
           </fieldset>
+          <div class="form-selection-wrapper form-selection-wrapper--app">
           <fieldset class="form-selection form-selection--app">
             <legend class="form-selection__subtitle">С каким приложением путешествовали?</legend>
             <div class="form-selection__wrapper container">
               <ul class="form-selection__list form-selection__list--app">
-                <li class="form-selection__item">
+                <li class="form-selection__item form-selection__item--app">
                   <input class="visually-hidden form-selection__radio" type="radio" id="ios" name="ios" checked>
-                  <label class="form-selection__label" for="ios">Pink для iOS</label>
+                  <label class="form-selection__label form-selection__label--app" for="ios">Pink для iOS</label>
                 </li>
-                <li class="form-selection__item">
+                <li class="form-selection__item form-selection__item--app">
                   <input class="visually-hidden form-selection__radio" type="radio" id="android" name="android">
-                  <label class="form-selection__label" for="android">Pink на Android</label>
+                  <label class="form-selection__label form-selection__label--app" for="android">Pink на Android</label>
                 </li>
-                <li class="form-selection__item">
+                <li class="form-selection__item form-selection__item--app">
                   <input class="visually-hidden form-selection__radio" type="radio" id="windows" name="windows">
-                  <label class="form-selection__label" for="windows">Windows Phone</label>
+                  <label class="form-selection__label form-selection__label--app" for="windows">Windows Phone</label>
                 </li>
               </ul>
             </div>
           </fieldset>
+        </div>
           <fieldset class="form-description form-description--story container">
             <legend class="form-description__subtitle">Опишите свои эмоции</legend>
             <div class="form-description__wrapper">

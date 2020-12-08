@@ -1,0 +1,13 @@
+.tariffs-data-header {
+  background-color: $basic-color;
+  color: $basic-white;
+  padding: 12px 20px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 20px 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 20px 21px;
+  }
+}

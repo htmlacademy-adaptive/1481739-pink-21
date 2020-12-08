@@ -46,30 +46,28 @@
   }
 }
 
-.contacts__wrapper-tel,
-.contacts__wrapper-mail,
-.contacts__wrapper-address {
+.contacts__wrapper {
   padding-bottom: 18px;
 
   @media (min-width: $desktop-width) {
     padding-left: 18px;
   }
-}
 
-.contacts__wrapper-address {
-  @media (min-width: $tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  &--address {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 37px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 37px;
-  }
-}
-
-.contacts__wrapper-mail {
-  @media (min-width: $desktop-width) {
-    order: 3;
+  &--mail {
+    @media (min-width: $desktop-width) {
+      order: 3;
+    }
   }
 }
 
