@@ -6,8 +6,13 @@
   margin-top: 45px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 86px;
+    margin-top: 90px;
     margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+    margin-bottom: 30px;
   }
 }
 
@@ -31,6 +36,10 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
   }
 }
 

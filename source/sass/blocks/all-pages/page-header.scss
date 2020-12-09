@@ -31,6 +31,10 @@
     @media (min-width: $tablet-width) {
       min-height: 440px;
     }
+
+    @media (min-width: $desktop-width) {
+      min-height: 394px;
+    }
   }
 }
 
@@ -93,5 +97,9 @@
     font-size: 50px;
     line-height: 68px;
     margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
   }
 }

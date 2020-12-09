@@ -16,5 +16,23 @@
       grid-row-start: 2;
       grid-row-end: 3;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 430px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      display: block;
+    }
+  }
+
+  &--achievments {
+    @media (min-width: $desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
   }
 }

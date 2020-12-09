@@ -1,0 +1,7 @@
+.form-fieldset-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 74px;
+  }
+}
