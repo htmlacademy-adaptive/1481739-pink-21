@@ -1,6 +1,10 @@
 .photos-blockquote {
-  padding: 14px 10px 26px 17px;
+  padding: 17px 9px 19px 17px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 9px 19px 30px;
+  }
 }
 
 .photos-blockquote__user {
@@ -41,16 +45,37 @@
 }
 
 .photos-blockquote__like {
+  position: relative;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $link-color;
-  background-image: url("../img/heart.svg");
-  background-repeat: no-repeat;
-  background-position-y: center;
   padding-left: 30px;
-  margin-top: 15px;
+  margin-top: 11px;
   margin-bottom: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+    @media (min-width: $tablet-width) {
+      right: 0;
+      left: auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    margin-right: 22px;
+  }
 
   &--state {
     @media (min-width: $tablet-width) {
@@ -59,6 +84,15 @@
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
+      text-align: right;
+      padding-right: 30px;
+      align-self: end;
     }
+  }
+}
+
+.photos-blockquote__break {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

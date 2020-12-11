@@ -18,3 +18,19 @@
     left: 193px;
   }
 }
+
+.range-photo-editor {
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

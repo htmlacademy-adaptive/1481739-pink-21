@@ -15,4 +15,9 @@
 
 .photos-item__wrapper {
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }

@@ -10,6 +10,7 @@
 
 <body class="page__body">
   <header class="page-header page-header--inner-background">
+    <div class="page-header__container page-header__container--inner">
     <div class="page-header__wrapper container">
       <a class="page-header__logo">
         <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
@@ -40,6 +41,7 @@
         </ul>
       </nav>
     </div>
+  </div>
     <div class="container">
       <p class="page-header__title">Фотографии пользователей</p>
     </div>
@@ -49,19 +51,18 @@
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class="container">
       <p class="photos__intro">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</p>
+        Взгляните на фотографии, которые выкладывают пользователи! <br class="photos__intro-break">Видите, как не хватает ваших?</p>
       </div>
       <div class="photos__main photos-main">
         <a class="photos__main-link photo-link" href="#">
-          <img class="photo-link__picture" src="img/bridge.jpg" alt="Фото панорамы с моста">
+          <img class="photo-link__picture photo-link__picture--main" src="img/bridge.jpg" alt="Фото панорамы с моста">
         </a>
+        <p class="photos__symbol">Панорама дня</p>
         <blockquote class="photos-main__statement photos-blockquote photos-blockquote--state container">
           <cite class="photos-blockquote__user photos-blockquote__user--state">Анна <span
               class="photos-blockquote__time">(5 минут назад)</span></cite>
           <p class="photos-blockquote__text photos-blockquote__text--state">Прыгать или нет? Напишите в комментарии свой
-            совет и смотрите прямую
-            трансляцию в перископе, задавайте свои вопросы!
+            совет и <br class="photos-blockquote__break"> смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
           <p class="photos-blockquote__like photos-blockquote__like--state">Нравится: 215</p>
         </blockquote>
@@ -151,11 +152,18 @@
           <img class="photo-editor__picture" src="img/winter.jpg" alt="Фото дороги зимой">
           <div class="photo-editor__container">
           <div class="photo-editor__tools">
+            <div>
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"
                 fill="#D22856" />
             </svg>
+            <div class="photo-editor__range range-photo-editor range-photo-editor--tablet">
+              <div class="range-photo-editor__scale"></div>
+              <div class="range-photo-editor__switch" tabindex="0" aria-label="Изменить размер фото"></div>
+            </div>
+          </div>
+          <div>
             <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
                 <path
@@ -164,6 +172,12 @@
                 <path d="M48 40H0V43H48V40Z" fill="#283645" />
               </g>
             </svg>
+            <div class="photo-editor__range range-photo-editor range-photo-editor--tablet">
+              <div class="range-photo-editor__scale"></div>
+              <div class="range-photo-editor__switch" tabindex="0" aria-label="Изменить размер фото"></div>
+            </div>
+          </div>
+          <div>
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
                 <path
@@ -174,8 +188,13 @@
                   fill="#283645" />
               </g>
             </svg>
+            <div class="photo-editor__range range-photo-editor range-photo-editor--tablet">
+              <div class="range-photo-editor__scale"></div>
+              <div class="range-photo-editor__switch" tabindex="0" aria-label="Изменить размер фото"></div>
+            </div>
           </div>
-          <div class="photo-editor__range range-photo-editor">
+          </div>
+          <div class="photo-editor__range range-photo-editor range-photo-editor--mobile">
             <div class="range-photo-editor__scale"></div>
             <div class="range-photo-editor__switch" tabindex="0" aria-label="Изменить размер фото"></div>
           </div>
@@ -188,7 +207,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">

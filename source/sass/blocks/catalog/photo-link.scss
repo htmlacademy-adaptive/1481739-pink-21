@@ -1,3 +1,15 @@
 .photo-link__picture {
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      width: 660px;
+      height: 509px;
+    }
+  }
 }
