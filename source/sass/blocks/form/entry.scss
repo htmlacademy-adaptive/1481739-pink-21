@@ -3,10 +3,15 @@
 }
 
 .entry__wrapper {
-  margin-top: 54px;
+  margin-top: 45px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 100px;
+    margin-top: 90px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -30,6 +35,10 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
   }
 }
 

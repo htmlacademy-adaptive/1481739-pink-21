@@ -5,6 +5,32 @@
   @media (min-width: $desktop-width) {
     border: 2px solid $border-grey;
   }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      padding: 0 60px;
+      margin-top: 30px;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border: 2px solid $border-grey;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      margin-top: 18px;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+
+  &--data {
+    @media (min-width: $desktop-width) {
+      width: 430px;
+      border: none;
+    }
+  }
 }
 
 .form-fieldset__wrapper {
@@ -16,6 +42,23 @@
     justify-content: space-around;
     margin-bottom: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+    padding-top: 16px;
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 7px;
+    }
+  }
 }
 
 .form-fieldset__label {
@@ -23,6 +66,22 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $link-color;
+  padding-left: 22px;
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 17px;
+    padding-right: 17px;
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      padding-left: 17px;
+      padding-top: 12px;
+      order: 2;
+    }
+  }
 }
 
 .form-fieldset__input {
@@ -30,28 +89,14 @@
   line-height: 30px;
   color: $basic-color;
   width: 100%;
+  min-height: 60px;
   border: 2px solid $border-grey;
-}
+  padding-left: 25px;
+  padding-top: 3px;
+  margin-bottom: 20px;
 
-.form-fieldset--contacts {
   @media (min-width: $tablet-width) {
-    padding: 0 60px;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border: 2px solid $border-grey;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-
-.form-fieldset--data {
-  @media (min-width: $desktop-width) {
-    width: 430px;
+    margin-bottom: 0;
+    padding-left: 22px;
   }
 }

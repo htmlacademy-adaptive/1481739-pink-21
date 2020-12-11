@@ -49,9 +49,8 @@
     <section class="entry">
       <div class="entry__wrapper">
         <div class="entry__text-wrapper container">
-        <p class="entry__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-          бонусную карту!</p>
-          <p class="entry__text-request">Пожалуйста, заполните форму ниже:</p>
+          <p class="entry__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+            бонусную карту! <span class="entry__text-request">Пожалуйста, заполните форму ниже:</span></p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form-fieldset form-fieldset--data container">
@@ -68,74 +67,84 @@
               <input class="form-fieldset__input" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <fieldset class="form-selection form-selection--achievements">
-            <legend class="form-selection__subtitle">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form-selection__wrapper container">
-              <ul class="form-selection__list">
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__input" type="checkbox" id="selfie" name="selfie"
-                    checked>
-                  <label class="form-selection__label" for="selfie">Сделал селфи с акулой</label>
-                </li>
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__input" type="checkbox" id="beach" name="beach" checked>
-                  <label class="form-selection__label" for="beach">Обгорел на пляже</label>
-                </li>
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__input" type="checkbox" id="star" name="star">
-                  <label class="form-selection__label" for="star">Видел Чака Норриса</label>
-                </li>
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__input" type="checkbox" id="souvenirs" name="souvenirs">
-                  <label class="form-selection__label" for="souvenirs">Накупил сувениров</label>
-                </li>
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__input" type="checkbox" id="tower" name="tower" checked>
-                  <label class="form-selection__label" for="tower">Удержал башню</label>
-                </li>
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__input" type="checkbox" id="hotel" name="hotel">
-                  <label class="form-selection__label" for="hotel">Разгромил отель</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
+          <div class="form-selection-wrapper form-selection-wrapper--achievments">
+            <fieldset class="form-selection form-selection--achievements">
+              <legend class="form-selection__subtitle">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form-selection__wrapper container">
+                <ul class="form-selection__list form-selection__list--achievements">
+                  <li class="form-selection__item">
+                    <input class="visually-hidden form-selection__input" type="checkbox" id="selfie" name="selfie"
+                      checked>
+                    <label class="form-selection__label" for="selfie">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="form-selection__item form-selection__item--beach">
+                    <input class="visually-hidden form-selection__input" type="checkbox" id="beach" name="beach"
+                      checked>
+                    <label class="form-selection__label" for="beach">Обгорел на пляже</label>
+                  </li>
+                  <li class="form-selection__item">
+                    <input class="visually-hidden form-selection__input" type="checkbox" id="star" name="star">
+                    <label class="form-selection__label" for="star">Видел Чака Норриса</label>
+                  </li>
+                  <li class="form-selection__item form-selection__item--souvenirs">
+                    <input class="visually-hidden form-selection__input" type="checkbox" id="souvenirs"
+                      name="souvenirs">
+                    <label class="form-selection__label" for="souvenirs">Накупил сувениров</label>
+                  </li>
+                  <li class="form-selection__item">
+                    <input class="visually-hidden form-selection__input" type="checkbox" id="tower" name="tower"
+                      checked>
+                    <label class="form-selection__label" for="tower">Удержал башню</label>
+                  </li>
+                  <li class="form-selection__item">
+                    <input class="visually-hidden form-selection__input" type="checkbox" id="hotel" name="hotel">
+                    <label class="form-selection__label" for="hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="form-fieldset form-fieldset--contacts container">
             <legend class="form-selection__subtitle form-selection__subtitle--contacts">Контактная информация</legend>
-            <div class="form-fieldset__wrapper">
-              <label class="form-fieldset__label" for="tel">Номер телефона</label>
-              <input class="form-fieldset__input" id="tel" name="tel" value="Номер, пожалуйста">
-            </div>
-            <div class="form-fieldset__wrapper">
-              <label class="form-fieldset__label" for="mail">Адрес почты</label>
-              <input class="form-fieldset__input" id="mail" name="mail" value="Введите почту *">
-            </div>
-          </fieldset>
-          <fieldset class="form-selection form-selection--app">
-            <legend class="form-selection__subtitle">С каким приложением путешествовали?</legend>
-            <div class="form-selection__wrapper container">
-              <ul class="form-selection__list form-selection__list--app">
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__radio" type="radio" id="ios" name="ios" checked>
-                  <label class="form-selection__label" for="ios">Pink для iOS</label>
-                </li>
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__radio" type="radio" id="android" name="android">
-                  <label class="form-selection__label" for="android">Pink на Android</label>
-                </li>
-                <li class="form-selection__item">
-                  <input class="visually-hidden form-selection__radio" type="radio" id="windows" name="windows">
-                  <label class="form-selection__label" for="windows">Windows Phone</label>
-                </li>
-              </ul>
+            <div class="form-fieldset-wrapper">
+              <div class="form-fieldset__wrapper form-fieldset__wrapper--contacts">
+                <label class="form-fieldset__label form-fieldset__label--contacts" for="tel">Номер телефона</label>
+                <input class="form-fieldset__input" id="tel" name="tel" value="Номер, пожалуйста">
+              </div>
+              <div class="form-fieldset__wrapper form-fieldset__wrapper--contacts">
+                <label class="form-fieldset__label form-fieldset__label--contacts" for="mail">Адрес почты</label>
+                <input class="form-fieldset__input" id="mail" name="mail" value="Введите почту *">
+              </div>
             </div>
           </fieldset>
+          <div class="form-selection-wrapper form-selection-wrapper--app">
+            <fieldset class="form-selection form-selection--app">
+              <legend class="form-selection__subtitle">С каким приложением путешествовали?</legend>
+              <div class="form-selection__wrapper container">
+                <ul class="form-selection__list form-selection__list--app">
+                  <li class="form-selection__item form-selection__item--app">
+                    <input class="visually-hidden form-selection__radio" type="radio" id="ios" name="ios" checked>
+                    <label class="form-selection__label form-selection__label--app" for="ios">Pink для iOS</label>
+                  </li>
+                  <li class="form-selection__item form-selection__item--app">
+                    <input class="visually-hidden form-selection__radio" type="radio" id="android" name="android">
+                    <label class="form-selection__label form-selection__label--app" for="android">Pink на
+                      Android</label>
+                  </li>
+                  <li class="form-selection__item form-selection__item--app">
+                    <input class="visually-hidden form-selection__radio" type="radio" id="windows" name="windows">
+                    <label class="form-selection__label form-selection__label--app" for="windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="form-description form-description--story container">
             <legend class="form-description__subtitle">Опишите свои эмоции</legend>
             <div class="form-description__wrapper">
               <label class="form-description__label" for="text" aria-label="Написать отзыв об отдыхе"></label>
-              <textarea class="form-description__text" id="text" name="text"
-                rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <textarea class="form-description__text" id="text"
+                name="text">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
           </fieldset>
           <div class="form__wrapper-button container">

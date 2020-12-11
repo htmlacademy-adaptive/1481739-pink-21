@@ -1,0 +1,38 @@
+.form-selection-wrapper {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 3px;
+    background-color: transparent;
+  }
+
+  &--app {
+    @media (min-width: $tablet-width) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 430px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      display: block;
+    }
+  }
+
+  &--achievments {
+    @media (min-width: $desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+}
