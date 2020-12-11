@@ -126,14 +126,7 @@
 }
 
 .form-selection__input:checked + .form-selection__label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 39px;
-  height: 39px;
   background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
@@ -159,7 +152,6 @@
   width: 15px;
   height: 15px;
   background-color: $link-color;
-  background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 50%;
 }
