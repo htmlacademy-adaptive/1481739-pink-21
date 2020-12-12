@@ -20,4 +20,8 @@
     margin-top: 0;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
