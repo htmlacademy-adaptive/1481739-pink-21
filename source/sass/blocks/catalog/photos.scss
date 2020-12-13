@@ -22,6 +22,7 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
+  padding: 0 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -30,16 +31,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 150px;
-  }
-}
-
-.photos__intro-break {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }
 
