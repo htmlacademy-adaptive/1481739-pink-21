@@ -52,6 +52,12 @@
     min-height: 110px;
     margin-bottom: 100px;
   }
+
+  &--inner {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
 }
 
 .page-header__wrapper {
@@ -73,14 +79,15 @@
   line-height: 33px;
   text-align: center;
   color: $basic-white;
-  margin: 0 auto;
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
+    padding: 0 130px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 150px;
   }
 }

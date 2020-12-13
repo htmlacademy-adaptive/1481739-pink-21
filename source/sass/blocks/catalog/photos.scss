@@ -1,8 +1,8 @@
 .photos {
-  padding-top: 54px;
+  padding-top: 45px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding-top: 90px;
   }
 }
 
@@ -21,6 +21,8 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  margin: 0;
+  padding: 0 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -32,6 +34,36 @@
   }
 }
 
+.photos__main {
+  margin-top: 50px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 78px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+    margin-bottom: 53px;
+  }
+}
+
 .photos__main-link {
   margin: 0 auto;
+}
+
+.photos__symbol {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 6px 20px;
+  margin: 0;
+  color: $basic-white;
+  text-transform: uppercase;
+  background-color: $link-color;
 }
