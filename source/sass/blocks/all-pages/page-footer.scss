@@ -28,3 +28,10 @@
     padding: 0;
   }
 }
+
+.page-footer__img {
+  @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+}

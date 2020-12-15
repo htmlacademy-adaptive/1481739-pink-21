@@ -4,6 +4,10 @@
   flex-direction: column;
   margin-left: auto;
 
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-grow: 1;
@@ -20,16 +24,27 @@
   &::after {
     content: "";
     width: 50px;
-    height: 3px;
+    height: 4px;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #ffffff;
-    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+    background-color: $basic-white;
+    box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  &:hover::after {
+    background-color: $link-color;
+    box-shadow: 0 10px 0 0 $link-color, 0 20px 0 0 $link-color;
+  }
+
+  &:active::after {
+    background-color: $link-color;
+    box-shadow: 0 10px 0 0 $link-color, 0 20px 0 0 $link-color;
+    opacity: 0.3;
   }
 }
 
@@ -65,8 +80,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     position: static;
+    margin-left: 173px;
+    justify-content: space-between;
   }
 }
 
@@ -90,5 +106,13 @@
     line-height: 18px;
     font-weight: normal;
     text-transform: none;
+  }
+
+  &:hover {
+    color: $link-color;
+  }
+
+  &:active {
+    color: $link-color-opacity;
   }
 }

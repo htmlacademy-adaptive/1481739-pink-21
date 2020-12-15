@@ -80,6 +80,16 @@
   @media (min-width: $desktop-width) {
     font-size: 21px;
   }
+
+  &:hover {
+    background-color: $basic-white;
+    color: $link-color;
+  }
+
+  &:active {
+    background-color: $basic-white;
+    color: $link-color-opacity;
+  }
 }
 
 .downloads__list {
