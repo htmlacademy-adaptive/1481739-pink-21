@@ -6,33 +6,78 @@
   background-color: $basic-color;
 
   &--picture {
-    background-image: url("../img/back-mobile-index.jpg");
+    position: relative;
+    background-image: url("../img/back-mobile.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
+    z-index: -2;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 286px;
+      background-image: url("../img/hand-mobile.png");
+      top: 174px;
+      left: 0;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hand-mobile@2x.png");
+        background-size: contain;
+      }
+
+      @media (min-width: $tablet-width) {
+        width: 660px;
+        height: 545px;
+        background-image: url("../img/hand-tablet.png");
+        top: 184px;
+        left: 0;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/hand-tablet@2x.png");
+          background-size: contain;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 1050px;
+        height: 645px;
+        background-image: url("../img/hand-desktop.png");
+        top: 207px;
+        right: 0;
+        left: auto;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/hand-desktop@2x.png");
+          background-size: contain;
+        }
+      }
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-mobile-index@2x.jpg");
+      background-image: url("../img/back-mobile@2x.jpg");
       background-size: contain;
     }
 
     @media (min-width: $tablet-width) {
       min-height: 729px;
-      background-image: url("../img/back-tablet-index.jpg");
+      background-image: url("../img/back-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/back-tablet-index@2x.jpg");
+        background-image: url("../img/back-tablet@2x.jpg");
         background-size: cover;
       }
     }
 
     @media (min-width: $desktop-width) {
       min-height: 853px;
-      background-image: url("../img/back-desktop-index.jpg");
-    }
+      background-image: url("../img/back-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop-index@2x.jpg");
-      background-size: cover;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 

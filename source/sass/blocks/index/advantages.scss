@@ -33,15 +33,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: $basic-grey;
-  background-image: url("../img/grey-background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-position-y: -38px;
-  background-position-x: -765px;
   position: relative;
   min-height: 790px;
-  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 790px;
+    background-color: #f2f2f2;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 4%);
+
+    @media (min-width: $tablet-width) {
+      height: 490px;
+      clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 12%);
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 635px;
+      clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 19%);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background-position: -36px;
