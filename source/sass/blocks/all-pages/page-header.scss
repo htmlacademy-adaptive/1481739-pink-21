@@ -4,14 +4,37 @@
   min-height: 733px;
   overflow: hidden;
   background-color: $basic-color;
+  position: relative;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 729px;
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 853px;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
 
   &--picture {
-    position: relative;
-    background-image: url("../img/back-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    z-index: -2;
-
     &::before {
       position: absolute;
       content: "";
@@ -20,7 +43,6 @@
       background-image: url("../img/hand-mobile.png");
       top: 174px;
       left: 0;
-      z-index: -1;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hand-mobile@2x.png");
@@ -52,31 +74,6 @@
           background-image: url("../img/hand-desktop@2x.png");
           background-size: contain;
         }
-      }
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-mobile@2x.jpg");
-      background-size: contain;
-    }
-
-    @media (min-width: $tablet-width) {
-      min-height: 729px;
-      background-image: url("../img/back-tablet.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/back-tablet@2x.jpg");
-        background-size: cover;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      min-height: 853px;
-      background-image: url("../img/back-desktop.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/back-desktop@2x.jpg");
-        background-size: cover;
       }
     }
   }
