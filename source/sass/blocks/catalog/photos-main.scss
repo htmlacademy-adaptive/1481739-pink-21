@@ -5,4 +5,8 @@
     grid-template-rows: auto auto;
     padding: 22px 27px 19px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 27px 22px 30px;
+  }
 }

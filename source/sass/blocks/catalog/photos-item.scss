@@ -10,6 +10,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 155px;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 30px;
   }
 }
 
