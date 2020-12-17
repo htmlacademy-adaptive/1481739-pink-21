@@ -156,6 +156,16 @@
   border-radius: 50%;
 }
 
+.form-selection__input:hover + .form-selection__label::before,
+.form-selection__radio:hover + .form-selection__label::before {
+  border: 2px solid $basic-color;
+}
+
+.form-selection__input:active + .form-selection__label::before,
+.form-selection__radio:active + .form-selection__label::before {
+  border: 2px solid $link-color;
+}
+
 .form-selection__item {
   margin-bottom: 51px;
 
