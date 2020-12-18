@@ -42,6 +42,7 @@
       background-image: url("../img/hand-mobile.png");
       top: 174px;
       left: 0;
+      pointer-events: none;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hand-mobile@2x.png");
