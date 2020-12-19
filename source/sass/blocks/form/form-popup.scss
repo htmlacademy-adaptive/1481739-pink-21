@@ -71,7 +71,7 @@
     background-color: $basic-grey;
   }
 
-  &--background {
+  &--color {
     background-color: $basic-grey;
     margin-top: 40px;
 
@@ -80,7 +80,7 @@
     }
   }
 
-  &--margin {
+  &--position {
     @media (min-width: $desktop-width) {
       margin-top: 20px;
     }

@@ -17,54 +17,60 @@
 .main-nav__toggle {
   @include button-reset;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   width: 50px;
   height: 24px;
+  outline: none;
 
-  &::after {
-    content: "";
-    width: 50px;
-    height: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: $basic-white;
-    box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
+  &--close {
+    &::after {
+      content: "";
+      width: 50px;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $basic-white;
+      box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+
+    &:hover::after {
+      background-color: $link-color;
+      box-shadow: 0 10px 0 0 $link-color, 0 20px 0 0 $link-color;
+    }
+
+    &:active::after {
+      background-color: $link-color;
+      box-shadow: 0 10px 0 0 $link-color, 0 20px 0 0 $link-color;
+      opacity: 0.3;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+  &--open {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: $basic-white;
+    }
 
-  &:hover::after {
-    background-color: $link-color;
-    box-shadow: 0 10px 0 0 $link-color, 0 20px 0 0 $link-color;
-  }
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
 
-  &:active::after {
-    background-color: $link-color;
-    box-shadow: 0 10px 0 0 $link-color, 0 20px 0 0 $link-color;
-    opacity: 0.3;
-  }
-}
-
-.main-nav__toggle--close {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: $basic-white;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
 
@@ -76,6 +82,11 @@
   top: 66px;
   text-align: center;
   display: none;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    top: 110px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -84,7 +95,12 @@
     margin-left: 173px;
     justify-content: space-between;
   }
+
+  &--open {
+    display: block;
+  }
 }
+
 
 .main-nav__link {
   position: relative;
