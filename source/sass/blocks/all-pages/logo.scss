@@ -1,0 +1,29 @@
+.logo-glasses {
+  fill: red;
+
+  &--header {
+    fill: $basic-white;
+  }
+
+  &--footer {
+    fill: $link-color;
+  }
+}
+
+.logo__word {
+  &--header {
+    fill: $basic-white;
+
+    &:hover {
+      fill: $link-color;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+  }
+
+  &--footer {
+    fill: $basic-color;
+  }
+}
