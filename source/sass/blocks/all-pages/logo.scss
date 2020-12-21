@@ -1,29 +1,62 @@
-.logo-glasses {
-  fill: red;
+.logo__picture {
+  display: none;
 
-  &--header {
+  @media (min-width: $tablet-width) {
+    display: block;
     fill: $basic-white;
   }
 
-  &--footer {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &--multicolored {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--glasses {
     fill: $link-color;
+  }
+
+  &--word {
+    fill: $basic-color;
   }
 }
 
-.logo__word {
-  &--header {
+.logo__decorated {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
     fill: $basic-white;
-
-    &:hover {
-      fill: $link-color;
-    }
-
-    &:active {
-      fill-opacity: 0.3;
-    }
   }
 
-  &--footer {
+  &--glasses {
+    fill: $link-color;
+  }
+
+  &--word,
+  &--part {
     fill: $basic-color;
+  }
+}
+
+.logo:hover .logo-pink {
+  fill: $link-color;
+}
+
+.logo:active .logo-pink {
+  fill-opacity: 0.3;
+}
+
+.logo__word {
+  fill: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
