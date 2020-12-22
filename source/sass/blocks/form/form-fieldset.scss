@@ -80,6 +80,36 @@
       padding-left: 17px;
       padding-top: 12px;
       order: 2;
+      position: relative;
+    }
+  }
+
+  &--tel,
+  &--email {
+    @media (min-width: $tablet-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: -60px;
+        width: 59px;
+        height: 59px;
+        background-color: $border-grey;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+  }
+
+  &--tel::before {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/phone-icon.svg");
+    }
+  }
+
+  &--email::before {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/mail-icon.svg");
     }
   }
 }

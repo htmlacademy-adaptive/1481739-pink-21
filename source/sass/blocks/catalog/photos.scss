@@ -66,4 +66,12 @@
   color: $basic-white;
   text-transform: uppercase;
   background-color: $link-color;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+  }
 }

@@ -82,6 +82,7 @@
     position: relative;
     min-height: 236px;
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       min-height: 440px;

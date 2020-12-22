@@ -34,9 +34,12 @@
   &:hover {
     border: 3px solid $basic-color;
   }
+}
 
-  &:active {
-    border: 3px solid $basic-color;
-    opacity: 0.1;
-  }
+.social-picture {
+  fill: $link-color;
+}
+
+.social__link:active .social-picture {
+  fill-opacity: 0.3;
 }

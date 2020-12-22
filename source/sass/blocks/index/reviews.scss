@@ -11,19 +11,32 @@
     top: 20%;
     position: absolute;
     content: "";
-    width: 22px;
-    height: 41px;
+    width: 35px;
+    height: 35px;
     background-repeat: no-repeat;
 
     &--prev {
       left: 0;
-      background-image: url("../img/arrow.svg");
+      border-top: 2px solid $basic-color;
+      border-right: 2px solid $basic-color;
+      opacity: 0.3;
+      transform: rotate(-135deg);
     }
 
     &--next {
       right: 0;
-      background-image: url("../img/arrow.svg");
-      transform: scale(-1, 1);
+      border-top: 2px solid $basic-color;
+      border-right: 2px solid $basic-color;
+      opacity: 0.3;
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 }
