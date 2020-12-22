@@ -30,7 +30,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -43,6 +42,7 @@
       background-image: url("../img/hand-mobile.png");
       top: 174px;
       left: 0;
+      pointer-events: none;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hand-mobile@2x.png");
@@ -113,6 +113,10 @@
       margin-bottom: 65px;
     }
   }
+
+  &--bg {
+    background-color: $basic-color;
+  }
 }
 
 .page-header__wrapper {
@@ -166,13 +170,52 @@
   }
 }
 
-.page-header__img {
-  @media (min-width: $tablet-width) {
-    width: 145px;
-    height: 40;
-  }
+// .page-header__logo {
+//   &--word {
+//     @media (min-width: $tablet-width) {
+//       display: none;
+//     }
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 147px;
-  }
-}
+//   &--glasses {
+//     display: none;
+
+//     @media (min-width: $tablet-width) {
+//       display: block;
+//     }
+//   }
+
+//   &--decoration {
+//     display: none;
+
+//     @media (min-width: $desktop-width) {
+//       display: block;
+//     }
+//   }
+// }
+
+// .page-header__img {
+//   &--word {
+//     fill: white;
+
+//     @media (min-width: $tablet-width) {
+//       display: none;
+//     }
+//   }
+// }
+
+// .page-header__pic {
+//   display: none;
+
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//   }
+// }
+
+// .page-header-pic__glasses {
+//   fill: pink;
+// }
+
+// .page-header-pic__word {
+//   fill: black;
+// }

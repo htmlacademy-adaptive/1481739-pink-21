@@ -87,6 +87,7 @@
 .form-fieldset__input {
   font-size: 18px;
   line-height: 30px;
+  font-family: inherit;
   color: $basic-color;
   width: 100%;
   min-height: 60px;
@@ -98,5 +99,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding-left: 22px;
+  }
+
+  &:hover {
+    border: 2px solid $basic-color;
+  }
+
+  &:active {
+    border: 2px solid $link-color;
   }
 }

@@ -1,0 +1,67 @@
+.logo__picture {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &--multicolored {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--glasses {
+    fill: $link-color;
+  }
+
+  &--word {
+    fill: $basic-color;
+  }
+}
+
+.logo__decorated {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: $basic-white;
+  }
+
+  &--glasses {
+    fill: $link-color;
+  }
+
+  &--word,
+  &--part {
+    fill: $basic-color;
+  }
+}
+
+.logo:hover .logo-pink {
+  fill: $link-color;
+}
+
+.logo:active .logo-pink {
+  fill-opacity: 0.3;
+}
+
+.logo__word {
+  fill: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo:hover .logo__picture--word,
+.logo:hover .logo__decorated--word {
+  fill: $link-color;
+}

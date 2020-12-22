@@ -1,6 +1,8 @@
 .downloads {
   @media (min-width: $tablet-width) {
     padding-left: 20px;
+    position: relative;
+    z-index: 3;
   }
 
   @media (min-width: $desktop-width) {

@@ -133,3 +133,15 @@
     order: 3;
   }
 }
+
+.contacts__iframe {
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
+}

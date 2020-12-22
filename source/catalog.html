@@ -12,7 +12,7 @@
   <header class="page-header page-header--inner-background">
     <div class="page-header__container page-header__container--inner">
       <div class="page-header__wrapper container">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк">
         </a>
         <nav class="main-nav">
@@ -55,7 +55,12 @@
       </div>
       <div class="photos__main photos-main">
         <a class="photos__main-link photo-link" href="#">
-          <img class="photo-link__picture photo-link__picture--main" src="img/bridge.jpg" alt="Фото панорамы с моста">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photo-link__picture photo-link__picture--main" src="img/panorama-mobile.jpg"
+              srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото панорамы с моста">
+          </picture>
         </a>
         <p class="photos__symbol">Панорама дня</p>
         <blockquote class="photos-main__statement photos-blockquote photos-blockquote--state container">
@@ -71,7 +76,12 @@
       <ul class="photos__list container">
         <li class="photos__item photos-item photos-item__wrapper">
           <a class="photos__item-link photo-link" href="#">
-            <img class="photo-link__picture" src="img/car.jpg" alt="Фото белой машины на фоне серой стены">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/car-desktop.jpg 1x, img/car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/car-tablet.jpg 1x, img/car-tablet@2x.jpg 2x">
+              <img class="photo-link__picture" src="img/car-mobile.jpg" srcset="img/car-mobile@2x.jpg 2x"
+                alt="Фото белой машины на фоне серой стены">
+            </picture>
           </a>
           <blockquote class="photos-item__statement photos-blockquote">
             <cite class="photos-blockquote__user">Левон <span class="photos-blockquote__time">(5 часов
@@ -83,10 +93,15 @@
         </li>
         <li class="photos__item photos-item photos-item__wrapper">
           <a class="photos__item-link photo-link" href="#">
-            <img class="photo-link__picture" src="img/drum.jpg" alt="Фото барабанной установки">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/drum-desktop.jpg 1x, img/drum-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/drum-tablet.jpg 1x, img/drum-tablet@2x.jpg 2x">
+            <img class="photo-link__picture" src="img/drum-mobile.jpg" srcset="img/drum-mobile@2x.jpg 2x" alt="Фото барабанной установки">
+            </picture>
           </a>
           <blockquote class="photos-item__statement photos-blockquote">
-            <cite class="photos-blockquote__user">Антон <span class="photos-blockquote__time">(12 часов назад)</span></cite>
+            <cite class="photos-blockquote__user">Антон <span class="photos-blockquote__time">(12 часов
+                назад)</span></cite>
             <p class="photos-blockquote__text">Соседи будут рады!
             </p>
             <p class="photos-blockquote__like">Нравится: 666</p>
@@ -94,10 +109,15 @@
         </li>
         <li class="photos__item photos-item photos-item__wrapper">
           <a class="photos__item-link photo-link" href="#">
-            <img class="photo-link__picture" src="img/sky.jpg" alt="Фото неба за решеткой">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/sky-desktop.jpg 1x, img/sky-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/sky-tablet.jpg 1x, img/sky-tablet@2x.jpg 2x">
+            <img class="photo-link__picture" src="img/sky-mobile.jpg" srcset="img/sky-mobile@2x.jpg 2x" alt="Фото неба за решеткой">
+            </picture>
           </a>
           <blockquote class="photos-item__statement photos-blockquote">
-            <cite class="photos-blockquote__user">Борис <span class="photos-blockquote__time">(20 часов назад)</span></cite>
+            <cite class="photos-blockquote__user">Борис <span class="photos-blockquote__time">(20 часов
+                назад)</span></cite>
             <p class="photos-blockquote__text">Здесь могла быть ваша цитата о высоком и вечном.
             </p>
             <p class="photos-blockquote__like">Нравится: 215</p>
@@ -105,10 +125,15 @@
         </li>
         <li class="photos__item photos-item photos-item__wrapper">
           <a class="photos__item-link photo-link" href="#">
-            <img class="photo-link__picture" src="img/market.jpg" alt="Фото Кубанской ярмарки">
+            <picture>
+            <source media="(min-width: 960px)" srcset="img/market-desktop.jpg 1x, img/market-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/market-tablet.jpg 1x, img/market-tablet@2x.jpg 2x">
+            <img class="photo-link__picture" src="img/market-mobile.jpg" srcset="img/market-mobile@2x.jpg 2x" alt="Фото Кубанской ярмарки">
+          </picture>
           </a>
           <blockquote class="photos-item__statement photos-blockquote">
-            <cite class="photos-blockquote__user">Сергей <span class="photos-blockquote__time">(25 часов назад)</span></cite>
+            <cite class="photos-blockquote__user">Сергей <span class="photos-blockquote__time">(25 часов
+                назад)</span></cite>
             <p class="photos-blockquote__text">Самая кубанская в мире!
             </p>
             <p class="photos-blockquote__like">Нравится: 4</p>
@@ -116,10 +141,15 @@
         </li>
         <li class="photos__item photos-item photos-item__wrapper">
           <a class="photos__item-link photo-link" href="#">
-            <img class="photo-link__picture" src="img/legs.jpg" alt="Фото с обрыва">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/cliff-desktop.jpg 1x, img/cliff-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/cliff-tablet.jpg 1x, img/cliff-tablet@2x.jpg 2x">
+            <img class="photo-link__picture" src="img/cliff-mobile.jpg" srcset="img/cliff-mobile@2x.jpg 2x" alt="Фото с обрыва">
+            </picture>
           </a>
           <blockquote class="photos-item__statement photos-blockquote">
-            <cite class="photos-blockquote__user">Максим <span class="photos-blockquote__time">(40 часов назад)</span></cite>
+            <cite class="photos-blockquote__user">Максим <span class="photos-blockquote__time">(40 часов
+                назад)</span></cite>
             <p class="photos-blockquote__text">Где снег-то?
             </p>
             <p class="photos-blockquote__like">Нравится: 150</p>
@@ -127,10 +157,15 @@
         </li>
         <li class="photos__item photos-item photos-item__wrapper">
           <a class="photos__item-link photo-link" href="#">
-            <img class="photo-link__picture" src="img/plane.jpg" alt="Фото крыла самолета на рассвете">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/plane-desktop.jpg 1x, img/plane-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/plane-tablet.jpg 1x, img/plane-tablet@2x.jpg 2x">
+            <img class="photo-link__picture" src="img/plane-mobile.jpg" srcset="img/plane-mobile@2x.jpg 2x" alt="Фото крыла самолета на рассвете">
+            </picture>
           </a>
           <blockquote class="photos-item__statement photos-blockquote">
-            <cite class="photos-blockquote__user">Надежда <span class="photos-blockquote__time">(45 часов назад)</span></cite>
+            <cite class="photos-blockquote__user">Надежда <span class="photos-blockquote__time">(45 часов
+                назад)</span></cite>
             <p class="photos-blockquote__text">Всем GM и взаимные лайки!</p>
             <p class="photos-blockquote__like">Нравится: 2560</p>
           </blockquote>
@@ -145,7 +180,10 @@
       </div>
       <div class="photo-editor__background">
         <div class="photo-editor__wrapper container">
-          <img class="photo-editor__picture" src="img/winter.jpg" alt="Фото дороги зимой">
+          <picture>
+              <source media="(min-width: 660px)" srcset="img/winter-tablet.jpg 1x, img/winter-tablet@2x.jpg 2x">
+          <img class="photo-editor__picture" src="img/winter-mobile.jpg" srcset="img/winter-mobile@2x.jpg 2x" alt="Фото дороги зимой">
+          </picture>
           <div class="photo-editor__container">
             <div class="photo-editor__tools">
               <div class="photo-editor__wrap">
@@ -211,7 +249,7 @@
   </main>
   <footer class="page-footer container">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo href="index.html"">
         <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z"

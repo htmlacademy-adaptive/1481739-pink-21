@@ -172,6 +172,16 @@
       padding: 0;
       height: 100%;
     }
+
+    &:hover {
+      background-color: $link-color;
+      color: $basic-white;
+    }
+
+    &:active {
+      background-color: $link-color;
+      color: $opacity-white;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -180,12 +190,22 @@
 
   &--cancel {
     opacity: 0.1;
-    border: 3px solid;
+    border: 3px solid $basic-color;
     box-sizing: border-box;
     border-radius: 30px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: $opacity-white;
+      background-color: $basic-color;
+      opacity: 0.3;
     }
   }
 }

@@ -30,6 +30,19 @@
   @media (min-width: $tablet-width) {
     padding: 14px 56px 15px;
   }
+
+  &:hover {
+    background-color: $hover-green;
+  }
+
+  &:active {
+    color: $opacity-white;
+  }
+
+  &:disabled {
+    background-color: $border-grey;
+    border: 2px solid $border-grey;
+  }
 }
 
 .form__wrapper-button {
@@ -61,4 +74,12 @@
 
 .form__star {
   color: $link-color;
+}
+
+.form__word {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
