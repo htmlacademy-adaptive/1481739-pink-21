@@ -107,6 +107,14 @@
   }
 }
 
+.research__gap {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .research__slogan-break {
   display: none;
 
