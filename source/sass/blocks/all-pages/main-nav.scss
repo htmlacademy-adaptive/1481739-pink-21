@@ -1,5 +1,6 @@
 .main-nav {
-  width: auto;
+  width: 100%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -23,6 +24,8 @@
   margin-left: auto;
   width: 50px;
   height: 24px;
+  margin-right: 20px;
+  padding-bottom: 20px;
 
   &--close {
     &::after {
@@ -34,6 +37,10 @@
       right: 0;
       background-color: $basic-white;
       box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 15px;
     }
 
     @media (min-width: $desktop-width) {
@@ -60,6 +67,12 @@
       width: 30px;
       height: 2px;
       background-color: $basic-white;
+      right: 0;
+      top: 50%;
+
+      @media (min-width: $tablet-width) {
+        top: 100%;
+      }
     }
 
     &::before {
@@ -87,12 +100,12 @@
 .main-nav__list {
   @include list-reset;
   width: 100%;
-  position: absolute;
   left: 0;
   top: 66px;
   text-align: center;
   display: none;
   z-index: 10;
+  border-top: 1px solid #000000;
 
   @media (min-width: $tablet-width) {
     top: 110px;
@@ -102,7 +115,7 @@
     display: flex;
     flex-wrap: wrap;
     position: static;
-    margin-left: 173px;
+    margin-left: 170px;
     justify-content: space-between;
   }
 
