@@ -7,6 +7,7 @@
 @import "./blocks/all-pages/page-header.scss";
 @import "./blocks/all-pages/visually-hidden.scss";
 @import "./blocks/all-pages/container.scss";
+@import "./blocks/all-pages/toggle.scss";
 @import "./blocks/all-pages/main-nav.scss";
 @import "./blocks/all-pages/logo.scss";
 @import "./blocks/index/downloads.scss";
@@ -23,7 +24,7 @@
 @import "./blocks/all-pages/page-footer.scss";
 @import "./blocks/all-pages/copyright.scss";
 @import "./blocks/all-pages/social.scss";
-@import "./blocks/index/slider-switch.scss";
+@import "./blocks/index/slider-switch-toggle.scss";
 @import "./blocks/form/entry.scss";
 @import "./blocks/form/form.scss";
 @import "./blocks/form/form-fieldset-wrapper.scss";
@@ -31,7 +32,6 @@
 @import "./blocks/form/form-selection-wrapper.scss";
 @import "./blocks/form/form-selection.scss";
 @import "./blocks/form/form-description.scss";
-@import "./blocks/form/modal.scss";
 @import "./blocks/form/form-popup.scss";
 @import "./blocks/catalog/photos-blockquote.scss";
 @import "./blocks/catalog/photos-item.scss";

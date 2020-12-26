@@ -1,6 +1,4 @@
 .logo__picture {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: block;
     fill: $basic-white;
@@ -17,7 +15,9 @@
       display: none;
     }
   }
+}
 
+.logo__image {
   &--glasses {
     fill: $link-color;
   }
@@ -34,7 +34,9 @@
     display: block;
     fill: $basic-white;
   }
+}
 
+.logo__img-decorated {
   &--glasses {
     fill: $link-color;
   }
@@ -61,7 +63,7 @@
   }
 }
 
-.logo:hover .logo__picture--word,
-.logo:hover .logo__decorated--word {
+.logo:hover .logo__image--word,
+.logo:hover .logo__img-decorated--word {
   fill: $link-color;
 }
