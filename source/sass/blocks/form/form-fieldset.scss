@@ -169,4 +169,15 @@
       margin-bottom: 18px;
     }
   }
+
+  @-moz-document url-prefix("") {
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 18px;
+    }
+  }
 }

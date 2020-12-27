@@ -33,7 +33,9 @@
     }
   }
 
-  &--bg {
+  // При открытии меню фон уходит вниз
+  &--bg,
+  &--no-js {
     background-position-y: center;
 
     @media (min-width: $tablet-width) {
@@ -41,56 +43,10 @@
     }
   }
 
-  // &--picture {
-  //   &::before {
-  //     position: absolute;
-  //     content: "";
-  //     width: 320px;
-  //     height: 286px;
-  //     background-image: url("../img/hand-mobile.png");
-  //     top: 174px;
-  //     left: 0;
-  //     pointer-events: none;
-
-  //     @media (min-resolution: 2dppx) {
-  //       background-image: url("../img/hand-mobile@2x.png");
-  //       background-size: contain;
-  //     }
-
-  //     @media (min-width: $tablet-width) {
-  //       width: 660px;
-  //       height: 545px;
-  //       background-image: url("../img/hand-tablet.png");
-  //       top: 184px;
-  //       left: 0;
-
-  //       @media (min-resolution: 2dppx) {
-  //         background-image: url("../img/hand-tablet@2x.png");
-  //         background-size: contain;
-  //       }
-  //     }
-
-  //     @media (min-width: $desktop-width) {
-  //       width: 1050px;
-  //       height: 645px;
-  //       background-image: url("../img/hand-desktop.png");
-  //       top: 207px;
-  //       right: 0;
-  //       left: auto;
-
-  //       @media (min-resolution: 2dppx) {
-  //         background-image: url("../img/hand-desktop@2x.png");
-  //         background-size: contain;
-  //       }
-  //     }
-  //   }
-  // }
-
   &--inner-background {
     position: relative;
     min-height: 236px;
     background-repeat: no-repeat;
-    background-size: cover;
 
     @media (min-width: $tablet-width) {
       min-height: 440px;
@@ -123,7 +79,9 @@
     }
   }
 
-  &--bg {
+  // При открытии меню меняется цвет шапки
+  &--bg,
+  &--no-js {
     background-color: $basic-color;
   }
 }
@@ -132,7 +90,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 19px 0 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 28px 0 0 0;
@@ -193,5 +150,10 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
     padding-left: 0;
+  }
+
+  //При отключенном js лого находится слева
+  &--no-js {
+    margin-right: auto;
   }
 }

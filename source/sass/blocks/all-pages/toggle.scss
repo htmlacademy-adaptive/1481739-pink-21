@@ -8,8 +8,14 @@
   width: 50px;
   height: 24px;
   margin-right: 20px;
+  margin-top: 20px;
   padding-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  // Кнопка при закрытом состоянии меню
   &--close {
     &::after {
       content: "";
@@ -42,6 +48,7 @@
     }
   }
 
+  // Кнопка при открытом состоянии меню
   &--open {
     &::before,
     &::after {
@@ -77,5 +84,10 @@
   &:active::after {
     background-color: $link-color;
     opacity: 0.3;
+  }
+
+  // Кнопка отсутствует при выключенном JS
+  &--no-js {
+    display: none;
   }
 }

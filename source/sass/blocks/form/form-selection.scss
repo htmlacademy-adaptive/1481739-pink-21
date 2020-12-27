@@ -49,6 +49,12 @@
   @media (min-width: $desktop-width) {
     padding: 0 20px;
   }
+
+  @-moz-document url-prefix("") {
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+    }
+  }
 }
 
 .form-selection__list {

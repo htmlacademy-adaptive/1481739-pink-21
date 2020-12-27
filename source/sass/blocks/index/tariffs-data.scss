@@ -18,5 +18,6 @@
 .tariffs-data {
   &--empty {
     background-color: $basic-grey;
+    border: none;
   }
 }

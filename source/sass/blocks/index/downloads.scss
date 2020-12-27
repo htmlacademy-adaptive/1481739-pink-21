@@ -18,7 +18,8 @@
     height: 286px;
     background-image: url("../img/hand-mobile.png");
     top: 85px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     pointer-events: none;
 
     @media (min-resolution: 2dppx) {
@@ -31,7 +32,7 @@
       height: 545px;
       background-image: url("../img/hand-tablet.png");
       top: -20px;
-      left: 0;
+      right: 0;
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
@@ -45,8 +46,7 @@
       height: 645px;
       background-image: url("../img/hand-desktop.png");
       top: 0;
-      right: 0;
-      left: auto;
+      left: 56%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hand-desktop@2x.png");
