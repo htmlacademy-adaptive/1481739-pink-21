@@ -153,10 +153,12 @@ img {
 
 .page-header__logo {
   padding-bottom: 20px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  margin-top: 20px; }
   @media (min-width: 660px) {
     .page-header__logo {
-      padding-bottom: 43px; } }
+      padding-bottom: 43px;
+      margin-top: 0; } }
   @media (min-width: 960px) {
     .page-header__logo {
       padding-bottom: 0;
@@ -204,7 +206,7 @@ img {
   padding-bottom: 20px; }
   @media (min-width: 660px) {
     .toggle {
-      margin-top: 0; } }
+      margin-top: 15px; } }
   .toggle--close::after {
     content: "";
     width: 50px;
@@ -214,9 +216,6 @@ img {
     right: 0;
     background-color: white;
     box-shadow: 0 10px 0 0 white, 0 20px 0 0 white; }
-  @media (min-width: 660px) {
-    .toggle--close {
-      margin-top: 15px; } }
   @media (min-width: 960px) {
     .toggle--close {
       display: none; } }
@@ -235,9 +234,6 @@ img {
     background-color: white;
     right: 0;
     top: 50%; }
-    @media (min-width: 660px) {
-      .toggle--open::before, .toggle--open::after {
-        top: 100%; } }
   .toggle--open::before {
     transform: rotate(45deg);
     box-shadow: none; }
@@ -329,20 +325,20 @@ img {
         bottom: -13px;
         left: 0; } }
 
-@media (min-width: 660px) {
-  .logo__picture {
-    display: block;
-    fill: white; } }
-
-@media (min-width: 960px) {
-  .logo__picture {
-    display: none; } }
-
-.logo__picture--multicolored {
-  display: block; }
+.logo__picture {
+  display: none; }
+  @media (min-width: 660px) {
+    .logo__picture {
+      display: block;
+      fill: white; } }
   @media (min-width: 960px) {
-    .logo__picture--multicolored {
+    .logo__picture {
       display: none; } }
+  .logo__picture--multicolored {
+    display: block; }
+    @media (min-width: 960px) {
+      .logo__picture--multicolored {
+        display: none; } }
 
 .logo__image--glasses {
   fill: #d22856; }
@@ -1814,7 +1810,8 @@ img {
   width: 276px;
   min-height: 197px;
   border: 2px solid #e5e5e5;
-  border-radius: 1px; }
+  border-radius: 1px;
+  resize: none; }
   @media (min-width: 660px) {
     .form-description__text {
       padding-top: 14px;
