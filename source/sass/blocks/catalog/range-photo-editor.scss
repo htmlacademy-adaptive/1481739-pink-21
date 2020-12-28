@@ -69,4 +69,8 @@
       left: 175px;
     }
   }
+
+  &:active {
+    background-color: $link-color;
+  }
 }

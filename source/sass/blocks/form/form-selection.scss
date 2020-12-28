@@ -50,16 +50,9 @@
     padding: 0 20px;
   }
 
-  &--contacts {
-    display: none;
-
+  @-moz-document url-prefix("") {
     @media (min-width: $tablet-width) {
-      display: block;
-      margin-bottom: 35px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 18px;
+      margin: 0 auto;
     }
   }
 }

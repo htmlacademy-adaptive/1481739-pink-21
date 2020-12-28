@@ -1,5 +1,5 @@
 .social {
-  margin: 35px 0;
+  margin: 38px 0;
 
   @media (min-width: $tablet-width) {
     margin: 36px 0;
@@ -23,8 +23,8 @@
 }
 
 .social__link {
-  width: 48px;
-  height: 48px;
+  width: 53px;
+  height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,9 +34,12 @@
   &:hover {
     border: 3px solid $basic-color;
   }
+}
 
-  &:active {
-    border: 3px solid $basic-color;
-    opacity: 0.1;
-  }
+.social-picture {
+  fill: $link-color;
+}
+
+.social__link:active .social-picture {
+  fill-opacity: 0.3;
 }

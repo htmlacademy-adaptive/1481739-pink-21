@@ -80,6 +80,36 @@
       padding-left: 17px;
       padding-top: 12px;
       order: 2;
+      position: relative;
+    }
+  }
+
+  &--tel,
+  &--email {
+    @media (min-width: $tablet-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: -60px;
+        width: 59px;
+        height: 59px;
+        background-color: $border-grey;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+  }
+
+  &--tel::before {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/phone-icon.svg");
+    }
+  }
+
+  &--email::before {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/mail-icon.svg");
     }
   }
 }
@@ -92,7 +122,7 @@
   width: 100%;
   min-height: 60px;
   border: 2px solid $border-grey;
-  padding-left: 25px;
+  padding-left: 20px;
   padding-top: 3px;
   margin-bottom: 20px;
 
@@ -107,5 +137,47 @@
 
   &:active {
     border: 2px solid $link-color;
+  }
+}
+
+.form-fieldset__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $link-color;
+  padding: 0 48px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px;
+  }
+
+  &--contacts {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 18px;
+    }
+  }
+
+  @-moz-document url-prefix("") {
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 18px;
+    }
   }
 }

@@ -7,3 +7,16 @@
     font-size: 18px;
   }
 }
+
+.copyright__link .copyright__img {
+  fill: $link-color;
+}
+
+.copyright__link:hover .copyright__img {
+  fill: $basic-color;
+}
+
+.copyright__link:active .copyright__img {
+  fill: $basic-color;
+  opacity: 0.3;
+}

@@ -226,7 +226,11 @@
 }
 
 .photo-editor__img {
+  fill: $opacity-blue;
+
   &--correction {
+    fill: $link-color;
+
     @media (min-width: $tablet-width) {
       width: 22px;
       height: 22px;
@@ -260,5 +264,14 @@
       width: 32px;
       height: 32px;
     }
+  }
+
+  &:hover {
+    fill: $basic-color;
+    fill-opacity: 0.5;
+  }
+
+  &:active {
+    fill: $link-color;
   }
 }

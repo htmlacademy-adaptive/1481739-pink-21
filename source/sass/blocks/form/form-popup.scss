@@ -1,6 +1,8 @@
 .form-popup {
+  display: none;
   margin: 0 auto;
   width: 320px;
+  background-color: $basic-white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
   @media (min-width: $tablet-width) {
@@ -9,6 +11,32 @@
 
   @media (min-width: $desktop-width) {
     width: 780px;
+  }
+
+  &--accept {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1234px;
+
+    @media (min-width: $tablet-width) {
+      top: 685px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 670px;
+    }
+  }
+
+  &--reject {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 760px;
+
+    @media (min-width: $tablet-width) {
+      top: 212px;
+    }
   }
 }
 
@@ -31,12 +59,13 @@
     font-weight: bold;
     font-size: 18px;
     color: $basic-black;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       padding: 0 65px;
       font-size: 30px;
       line-height: 40px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -55,7 +84,9 @@
   background-color: $button-green;
 
   @media (min-width: $desktop-width) {
-    width: 296px;
+    &--size {
+      width: 296px;
+    }
   }
 }
 
@@ -63,7 +94,7 @@
   padding: 50px 22px 52px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 82px 54px;
+    padding: 50px 82px 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,7 +104,11 @@
 
   &--color {
     background-color: $basic-grey;
-    margin-top: 40px;
+    margin-top: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-top: 0;
@@ -81,20 +116,33 @@
   }
 
   &--position {
+    padding-top: 43px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 32px;
+    }
+
     @media (min-width: $desktop-width) {
       margin-top: 20px;
+      padding-top: 47px;
     }
   }
 }
 
 .form-popup__wrapper {
-  padding: 44px 20px 0;
+  padding: 38px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 49px 55px 0;
+    padding: 45px 55px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 49px 125px 44px;
+    padding: 32px 125px 44px;
+  }
+}
+
+.form-popup__break {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

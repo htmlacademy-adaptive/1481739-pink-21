@@ -1,5 +1,6 @@
 .photo-link__picture {
   margin: auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 300px;
