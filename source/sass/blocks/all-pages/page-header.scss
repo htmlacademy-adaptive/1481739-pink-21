@@ -142,9 +142,11 @@
 .page-header__logo {
   padding-bottom: 20px;
   padding-left: 20px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 43px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {

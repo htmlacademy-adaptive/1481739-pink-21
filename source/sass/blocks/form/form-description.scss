@@ -54,6 +54,7 @@
   min-height: 197px;
   border: 2px solid $border-grey;
   border-radius: 1px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     padding-top: 14px;

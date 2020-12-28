@@ -12,7 +12,7 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    margin-top: 15px;
   }
 
   // Кнопка при закрытом состоянии меню
@@ -26,10 +26,6 @@
       right: 0;
       background-color: $basic-white;
       box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-top: 15px;
     }
 
     @media (min-width: $desktop-width) {
@@ -59,10 +55,6 @@
       background-color: $basic-white;
       right: 0;
       top: 50%;
-
-      @media (min-width: $tablet-width) {
-        top: 100%;
-      }
     }
 
     &::before {

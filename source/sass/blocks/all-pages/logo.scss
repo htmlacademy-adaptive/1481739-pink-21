@@ -1,4 +1,6 @@
 .logo__picture {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     fill: $basic-white;
