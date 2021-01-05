@@ -245,6 +245,7 @@
 
   &--color {
     @media (min-width: $tablet-width) {
+      fill: $link-color;
       width: 24px;
       height: 22px;
     }
@@ -257,6 +258,7 @@
 
   &--contrast {
     @media (min-width: $tablet-width) {
+      fill: $link-color;
       width: 16px;
       height: 16px;
     }
