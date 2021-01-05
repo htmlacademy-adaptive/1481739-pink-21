@@ -150,6 +150,7 @@
   @include button-reset;
   width: 100%;
   display: block;
+  font-family: inherit;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -244,6 +245,7 @@
 
   &--color {
     @media (min-width: $tablet-width) {
+      fill: $link-color;
       width: 24px;
       height: 22px;
     }
@@ -256,6 +258,7 @@
 
   &--contrast {
     @media (min-width: $tablet-width) {
+      fill: $link-color;
       width: 16px;
       height: 16px;
     }
