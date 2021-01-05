@@ -36,9 +36,7 @@
   }
 
   @-moz-document url-prefix("") {
-    @media (min-width: $tablet-width) {
-      margin: 0 auto;
-    }
+    margin: 0 auto;
   }
 }
 
