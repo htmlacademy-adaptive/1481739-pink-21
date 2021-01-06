@@ -64,6 +64,11 @@
     width: 100%;
     min-height: 124px;
   }
+
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder {
+    color: $basic-color;
+  }
 }
 
 .form-description__wrapper {

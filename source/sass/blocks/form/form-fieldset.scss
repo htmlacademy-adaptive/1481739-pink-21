@@ -129,6 +129,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding-left: 22px;
+    padding-right: 60px;
   }
 
   &:hover {
@@ -137,6 +138,11 @@
 
   &:active {
     border: 2px solid $link-color;
+  }
+
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder {
+    color: $basic-color;
   }
 }
 
