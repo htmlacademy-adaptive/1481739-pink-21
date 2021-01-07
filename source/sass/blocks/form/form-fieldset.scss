@@ -140,8 +140,7 @@
     border: 2px solid $link-color;
   }
 
-  &::-webkit-input-placeholder,
-  &:-moz-placeholder {
+  &::placeholder {
     color: $basic-color;
   }
 }

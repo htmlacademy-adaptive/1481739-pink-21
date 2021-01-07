@@ -65,8 +65,7 @@
     min-height: 124px;
   }
 
-  &::-webkit-input-placeholder,
-  &:-moz-placeholder {
+  &::placeholder {
     color: $basic-color;
   }
 }
