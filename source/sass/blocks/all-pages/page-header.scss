@@ -5,23 +5,19 @@
   overflow: hidden;
   background-color: $basic-color;
   position: relative;
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/back-tablet.jpg");
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: 50%;
+  background-size: 779px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.jpg");
-    background-size: contain;
+    background-image: url("../img/back-tablet@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     min-height: 729px;
-    background-image: url("../img/back-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-tablet@2x.jpg");
-      background-size: cover;
-    }
+    background-position: center;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,16 +29,6 @@
     }
   }
 
-  // При открытии меню фон уходит вниз
-  &--bg,
-  &--no-js {
-    background-position-y: center;
-
-    @media (min-width: $tablet-width) {
-      background-position-y: bottom;
-    }
-  }
-
   &--inner-background {
     position: relative;
     min-height: 236px;
@@ -50,9 +36,38 @@
 
     @media (min-width: $tablet-width) {
       min-height: 440px;
+      background-position-y: 0;
+      background-attachment: inherit;
+      background-size: auto;
+
+      @media (min-resolution: 2dppx) {
+        background-position-x: 50%;
+        background-size: 1200px;
+      }
     }
 
     @media (min-width: $desktop-width) {
+      min-height: 394px;
+
+      @media (min-resolution: 2dppx) {
+        background-size: 265%;
+      }
+    }
+  }
+
+  // При открытии меню фон уходит вниз
+  &--bg,
+  &--no-js {
+    background-position-y: 277px;
+    min-height: 497px;
+
+    @media (min-width: $tablet-width) {
+      background-position-y: 260px;
+      min-height: 695px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-y: 0;
       min-height: 394px;
     }
   }
@@ -83,6 +98,10 @@
   &--bg,
   &--no-js {
     background-color: $basic-color;
+
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+    }
   }
 }
 
@@ -97,7 +116,9 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
-    padding: 25px 130px;
+    padding: 25px 0;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
