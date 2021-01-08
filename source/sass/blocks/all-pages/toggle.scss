@@ -1,7 +1,7 @@
 .toggle {
   @include button-reset;
+  display: none;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -17,6 +17,8 @@
 
   // Кнопка при закрытом состоянии меню
   &--close {
+    display: flex;
+
     &::after {
       content: "";
       width: 50px;
@@ -46,6 +48,8 @@
 
   // Кнопка при открытом состоянии меню
   &--open {
+    display: flex;
+
     &::before,
     &::after {
       content: "";
