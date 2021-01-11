@@ -8,37 +8,31 @@
   @media (min-width: $desktop-width) {
     @include button-reset;
     display: block;
-    top: 20%;
+    top: 19%;
     position: absolute;
-    content: "";
-    width: 35px;
-    height: 35px;
-    background-repeat: no-repeat;
+    padding: 0;
 
     &--prev {
       left: 0;
-      border-top: 2px solid $basic-color;
-      border-right: 2px solid $basic-color;
-      opacity: 0.3;
-      transform: rotate(-135deg);
     }
 
     &--next {
       right: 0;
-      border-top: 2px solid $basic-color;
-      border-right: 2px solid $basic-color;
-      opacity: 0.3;
-      transform: rotate(45deg);
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.1;
+      transform: rotate(180deg);
     }
   }
+}
+
+.reviews__icon {
+  opacity: 0.3;
+}
+
+.reviews__control:hover .reviews__icon {
+  opacity: 0.6;
+}
+
+.reviews__control:active .reviews__icon {
+  opacity: 0.1;
 }
 
 .reviews__switch {
