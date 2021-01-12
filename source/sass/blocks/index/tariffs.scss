@@ -1,6 +1,6 @@
 .tariffs {
   position: relative;
-  width: 100vw;
+  max-width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -113,5 +113,22 @@
 .tariffs__icon {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
+  }
+}
+
+.tariffs__wrapper {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
